@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <application>
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskchat.component.imagevideoscan.ImageVideoScanActivity"
+            android:launchMode="singleTask"
+            android:configChanges="screenSize|keyboardHidden|orientation" />
+
+
+        <!-- **************** Classic UI Start **************** -->
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskchat.classicui.page.DeskMessageReplyDetailActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskchat.classicui.page.DeskTUIForwardChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskchat.classicui.page.DeskTUIC2CChatActivityDesk"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateHidden" />
+
+
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskchat.classicui.page.DeskDeskTUIGroupChatActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateHidden"/>
+
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskchat.classicui.page.DeskMessageReceiptDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskchat.component.camera.CameraActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- **************** Classic UI End **************** -->
+
+
+
+
+
+        <!-- **************** Minimalist UI Start **************** -->
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskchat.minimalistui.widget.messagepopmenu.ChatPopActivity"
+            android:theme="@style/ChatTransparentPopActivityStyle"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustNothing|stateHidden" />
+
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskchat.minimalistui.page.DeskTUIC2CChatMinimalistActivityDesk"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateHidden" />
+
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskchat.minimalistui.page.DeskTUIGroupChatMinimalistActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateHidden" />
+
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskchat.minimalistui.page.DeskMessageDetailMinimalistActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskchat.minimalistui.page.DeskTUIForwardChatMinimalistActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- **************** Minimalist UI End **************** -->
+
+
+    </application>
+
+</manifest>

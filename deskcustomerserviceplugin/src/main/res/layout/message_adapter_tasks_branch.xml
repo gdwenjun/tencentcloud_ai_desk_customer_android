@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tv_branch_title"
+        android:textColor="@color/customer_service_title_color"
+        android:textSize="16sp"
+        android:paddingTop="6dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="gravity"
+        android:gravity="start"
+        tools:text="Hello"/>
+
+    <com.tencent.qcloud.tuikit.deskcustomerserviceplugin.classicui.widget.TasksBranchListLayout
+        android:id="@+id/branch_item_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"/>
+
+</LinearLayout>

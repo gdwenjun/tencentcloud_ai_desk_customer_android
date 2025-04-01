@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:background="@drawable/popup_collection_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_marginTop="@dimen/core_popup_card_padding"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/core_popup_card_padding"
+        android:layout_marginEnd="@dimen/core_popup_card_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="start"
+            android:id="@+id/popup_card_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textFontWeight="500"
+            android:textSize="@dimen/core_popup_card_title_size"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            tool:text=""/>
+
+        <ImageView
+            android:id="@+id/close_btn"
+            android:layout_gravity="end"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/core_close_icon" />
+
+    </FrameLayout>
+
+    <com.tencent.qcloud.tuikit.deskcustomerserviceplugin.classicui.widget.TasksCollectionListLayout
+        android:id="@+id/collection_item_list"
+        android:scrollbarSize="3dp"
+        android:scrollbarThumbVertical="@drawable/chat_translucent_round_rect_border"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="7dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/core_popup_card_btn_margin_top"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/popup_submit_btn"
+            android:text="@string/collection_submit_text"
+            android:textSize="@dimen/core_popup_card_btn_text_size"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/collection_btn"
+            android:layout_width="150dp"
+            android:layout_height="@dimen/core_popup_card_btn_height"
+            android:layout_marginStart="@dimen/core_popup_card_btn_margin_left_right"
+            android:layout_marginEnd="@dimen/core_popup_card_btn_margin_left_right"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

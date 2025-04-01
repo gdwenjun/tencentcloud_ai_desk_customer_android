@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+  <domain-config cleartextTrafficPermitted="true">
+    <!-- 请将下面的域名替换为您在前提条件中获取的接入点，请不要包含"http://"、端口号和URL路径 -->
+    <domain includeSubdomains="true">otlp.tccc.qcloud.com</domain>
+    <domain includeSubdomains="true">otlp.tpstelemetry.woa.com</domain>
+    <domain includeSubdomains="true">otlp.connect.tencentcloud.com</domain>
+    <domain includeSubdomains="true">10.21.24.28</domain>
+  </domain-config>
+</network-security-config>

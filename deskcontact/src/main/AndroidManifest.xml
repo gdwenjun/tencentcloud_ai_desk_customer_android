@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <!-- **************** Classic UI Activity Start **************** -->
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskcontact.classicui.pages.DeskAddMoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskcontact.classicui.pages.DeskFriendProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskcontact.classicui.pages.DeskNewFriendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskcontact.classicui.pages.DeskBlackListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskcontact.classicui.pages.DeskGroupListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskcontact.classicui.pages.DeskStartC2CChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskcontact.classicui.pages.DeskStartGroupChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskcontact.classicui.pages.DeskForwardSelectGroupActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskcontact.classicui.pages.DeskStartGroupMemberSelectActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskcontact.classicui.pages.DeskCreateGroupActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskcontact.classicui.pages.DeskGroupTypeSelectActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- **************** Classic UI Activity End **************** -->
+
+
+
+
+
+        <!-- **************** Minimalist UI Activity Start **************** -->
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskcontact.minimalistui.pages.DeskFriendProfileMinimalistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskcontact.minimalistui.pages.DeskNewFriendApplicationMinimalistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskcontact.minimalistui.pages.DeskNewFriendApplicationDetailMinimalistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskcontact.minimalistui.pages.DeskBlackListMinimalistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskcontact.minimalistui.pages.DeskGroupListMinimalistActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskcontact.minimalistui.pages.DeskStartC2CChatMinimalistActivity"
+            android:theme="@style/ContactTransparentPopActivityStyle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskcontact.minimalistui.pages.DeskStartGroupChatMinimalistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ContactTransparentPopActivityStyle"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskcontact.minimalistui.pages.DeskStartGroupMemberSelectMinimalistActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskcontact.minimalistui.pages.DeskCreateGroupMinimalistActivity"
+            android:theme="@style/ContactTransparentPopActivityStyle"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.tencent.qcloud.tuikit.deskcontact.minimalistui.pages.DeskGroupTypeSelectMinimalistActivity"
+            android:theme="@style/ContactTransparentPopActivityStyle"
+            android:screenOrientation="portrait" />
+
+        <!-- **************** Minimalist UI Activity End **************** -->
+
+    </application>
+</manifest>
