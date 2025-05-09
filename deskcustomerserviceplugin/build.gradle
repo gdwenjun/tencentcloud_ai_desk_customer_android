@@ -55,7 +55,7 @@ dependencies {
     implementation 'io.noties.markwon:ext-tables:4.6.2'
 
     def projects = this.rootProject.getAllprojects().stream().map { project -> project.name }.collect()
-    api projects.contains("deskcommon") ? project(':deskcommon') : "com.tencentcloud.desk:deskcommon:2.2.6"
-    api projects.contains("deskchat") ? project(':deskchat') : "com.tencentcloud.desk:deskchat:2.2.6"
-    api projects.contains("deskcontact") ? project(':deskcontact') : "com.tencentcloud.desk:deskcontact:2.2.6"
+    api projects.contains("deskcommon") ? project(':deskcommon') : "com.tencentcloud.desk:deskcommon:2.2.8"
+    api projects.contains("deskchat") ? project(':deskchat') : "com.tencentcloud.desk:deskchat:2.2.8"
+    api projects.contains("deskcontact") ? project(':deskcontact') : "com.tencentcloud.desk:deskcontact:2.2.8"
 }

@@ -181,7 +181,7 @@ public class TUICustomerServicePresenter {
         }
         String chatID = messageBean.getUserId();
         TUIMessageBean messageBean = ChatMessageBuilder.buildCustomMessage(msgJson.toString(), "", null);
-        TUIChatService.getInstance().sendMessage(messageBean, chatID, V2TIMConversation.V2TIM_C2C, true);
+        TUIChatService.getInstance().sendMessage(messageBean, chatID, V2TIMConversation.V2TIM_C2C, false);
     }
 
     public void sendProductMessage(String userID, TUICustomerServiceProductInfo productInfo) {
@@ -206,7 +206,7 @@ public class TUICustomerServicePresenter {
 
         if (!TextUtils.isEmpty(productMessageJson.toString())) {
             TUIMessageBean messageBean = ChatMessageBuilder.buildCustomMessage(productMessageJson.toString(), "", null);
-            TUIChatService.getInstance().sendMessage(messageBean, userID, V2TIMConversation.V2TIM_C2C, true);
+            TUIChatService.getInstance().sendMessage(messageBean, userID, V2TIMConversation.V2TIM_C2C, false);
         }
     }
 }

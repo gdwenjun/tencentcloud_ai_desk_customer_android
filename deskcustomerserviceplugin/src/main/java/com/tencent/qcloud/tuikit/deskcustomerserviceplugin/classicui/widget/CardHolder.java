@@ -40,7 +40,7 @@ public class CardHolder extends MessageContentHolder {
         if (cardBean == null) {
             return;
         }
-
+        tvHeader.setVisibility(View.VISIBLE);
         tvHeader.setText(cardBean.getHeader());
         tvDesc.setText(cardBean.getDesc());
         GlideEngine.loadImageSetDefault(ivPic, cardBean.getPic(), R.drawable.product_picture_fail);

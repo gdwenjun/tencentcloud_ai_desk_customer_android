@@ -9,8 +9,10 @@ import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.BranchBean;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.CardBean;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.CollectionBean;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.EvaluationBean;
+import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.SeatStatusBean;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.TasksBranchBean;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.TasksCollectionBean;
+import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.ThinkingBean;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -395,4 +397,43 @@ public class TUICustomerServiceMessageParser {
 
         return displayContent;
     }
+
+    public static ThinkingBean getThinkingInfo(V2TIMMessage v2TIMMessage) {
+        V2TIMCustomElem customElem = v2TIMMessage.getCustomElem();
+        if (customElem == null || customElem.getData() == null || customElem.getData().length == 0) {
+            TUICustomerServiceLog.e(TAG, "getThinkingInfo fail, customElem or data is empty");
+            return null;
+        }
+
+        ThinkingBean thinkingBean = new ThinkingBean();
+        String data = new String(customElem.getData());
+        try {
+            JSONObject jsonObject = new JSONObject(data);
+            thinkingBean.setThinkingStatus(jsonObject.getInt(TUICustomerServiceConstants.THINKING_STATUTS));
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return thinkingBean;
+    }
+
+    public static SeatStatusBean getSeatStatusBeannInfo(V2TIMMessage v2TIMMessage) {
+        V2TIMCustomElem customElem = v2TIMMessage.getCustomElem();
+        if (customElem == null || customElem.getData() == null || customElem.getData().length == 0) {
+            TUICustomerServiceLog.e(TAG, "getThinkingInfo fail, customElem or data is empty");
+            return null;
+        }
+
+        SeatStatusBean seatStatusBean = new SeatStatusBean();
+        String data = new String(customElem.getData());
+        try {
+            JSONObject jsonObject = new JSONObject(data);
+            JSONObject contentJson = new JSONObject(jsonObject.optString(TUICustomerServiceConstants.CUSTOMER_SERVICE_CONTENT));
+            seatStatusBean.setCommand(contentJson.getString(TUICustomerServiceConstants.CUSTOMER_SERVICE_COMMAND));
+            seatStatusBean.setContent(contentJson.getString(TUICustomerServiceConstants.CUSTOMER_SERVICE_ITEM_CONTENT));
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return seatStatusBean;
+    }
+
 }

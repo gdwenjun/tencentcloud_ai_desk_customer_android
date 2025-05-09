@@ -1,8 +1,12 @@
 package com.tencent.qcloud.tuikit.deskcustomerserviceplugin.config;
 
 import android.text.TextUtils;
+import android.view.View;
 
+import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.R;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.TUICustomerServiceConstants;
+import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.classicui.widget.InputViewFloatLayerProxy;
+import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.presenter.TUICustomerServicePresenter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,14 +17,38 @@ public class TUICustomerServiceConfig {
     public static TUICustomerServiceConfig getInstance() {
         if (instance == null) {
             instance = new TUICustomerServiceConfig();
+            instance.inputViewFloatLayerDataList = new ArrayList<>();
+            getInstance().defaultFloatLayerData.setDefault(true);
+            getInstance().defaultFloatLayerData.setIconResourceId(R.drawable.to_human);
+
+            getInstance().defaultFloatLayerData.setOnItemClickListener(new InputViewFloatLayerProxy.OnItemClickListener() {
+                @Override
+                public void onItemClick(View view, int position) {
+                    TUICustomerServicePresenter persenter = new TUICustomerServicePresenter();
+                    persenter.sendTextMessage(TUICustomerServiceConstants.DEFAULT_CUSTOMER_SERVICE_ACCOUNT,getInstance().defaultFloatLayerData.getContent());
+                }
+            });
+            instance.inputViewFloatLayerDataList.add(getInstance().defaultFloatLayerData);
         }
 
         return instance;
     }
 
+
     private TUICustomerServiceProductInfo productInfo;
+    private TUIInputViewFloatLayerData defaultFloatLayerData = new TUIInputViewFloatLayerData();
     private List<TUIInputViewFloatLayerData> inputViewFloatLayerDataList = new ArrayList<>();
     private List<String> customerServiceAccounts = new ArrayList<>();
+
+    public boolean getIsShowHumanService() {
+        return isShowHumanService;
+    }
+
+    public void setShowHumanService(boolean showHumanService) {
+        isShowHumanService = showHumanService;
+    }
+
+    private boolean isShowHumanService = false;
 
     public List<TUIInputViewFloatLayerData> getInputViewFloatLayerDataList() {
         return inputViewFloatLayerDataList;
@@ -31,7 +59,9 @@ public class TUICustomerServiceConfig {
     }
 
     public void setInputViewFloatLayerDataList(List<TUIInputViewFloatLayerData> inputViewFloatLayerDataList) {
-        this.inputViewFloatLayerDataList = inputViewFloatLayerDataList;
+        this.inputViewFloatLayerDataList.clear();
+        this.inputViewFloatLayerDataList.add(defaultFloatLayerData);
+        this.inputViewFloatLayerDataList.addAll(inputViewFloatLayerDataList);
     }
 
     public void setProductInfo(TUICustomerServiceProductInfo productInfo) {
@@ -39,16 +69,6 @@ public class TUICustomerServiceConfig {
     }
 
     public TUICustomerServiceProductInfo getProductInfo() {
-//        if (this.productInfo != null) {
-//            return this.productInfo;
-//        } else {
-//            TUICustomerServiceProductInfo defaultProductInfo = new TUICustomerServiceProductInfo();
-//            defaultProductInfo.setName("Handwoven leather handbag 2023 new women's mini simple and elegant high-end and classy");
-//            defaultProductInfo.setDescription("$788");
-//            defaultProductInfo.setPictureUrl("https://qcloudimg.tencent-cloud.cn/raw/a811f634eab5023f973c9b224bc07a51.png");
-//            defaultProductInfo.setJumpUrl("https://cloud.tencent.com/document/product/269");
-//            return defaultProductInfo;
-//        }
         return this.productInfo;
     }
 

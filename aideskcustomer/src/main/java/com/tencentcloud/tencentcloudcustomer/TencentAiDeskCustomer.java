@@ -38,7 +38,7 @@ import java.util.List;
 
 public class TencentAiDeskCustomer {
 
-    public static final String _version = "2.2.6";
+    public static final String _version = "2.2.8";
 
 
     public static final String TAG = TencentAiDeskCustomer.class.getSimpleName();
@@ -200,7 +200,16 @@ public class TencentAiDeskCustomer {
 
     public  void setProductInfo(TencentAiDeskCustomerProductInfo info){
         TUICustomerServiceConfig.getInstance().setProductInfo(TencentAiDeskCustomerCommonUtils.TencentCustomerInfoToTUICustomerProductInto(info));
+        if (info == null) {
+            TencentAiDeskCustomerReport.reportInfo("set product info is null  " );
+            return;
+        }
         TencentAiDeskCustomerReport.reportInfo("set product info " + info.toString());
+    }
+
+    public void setShowHumanService(boolean showHumanService){
+        TUICustomerServiceConfig.getInstance().setShowHumanService(showHumanService);
+        TencentAiDeskCustomerReport.reportInfo("set setShowHumanService " + showHumanService);
     }
 
     public String getCrashLogDir(){

@@ -5,6 +5,7 @@ public class TUICustomerServiceConstants {
     public static final String DEFAULT_CUSTOMER_SERVICE_ACCOUNT = "@customer_service_account";
     public static final String CUSTOMER_SERVICE_CONTENT = "content";
     public static final String CUSTOMER_SERVICE_STATUS = "status";
+    public static final String CUSTOMER_SERVICE_COMMAND = "command";
     public static final String CUSTOMER_SERVICE_HEADER = "header";
     public static final String CUSTOMER_SERVICE_TIP = "tip";
     public static final String CUSTOMER_SERVICE_ITEMS = "items";
@@ -36,5 +37,7 @@ public class TUICustomerServiceConstants {
     public static final String BOT_SUBTYPE = "subtype";
     public static final String BOT_TITLE = "title";
     public static final String BOT_CHUNKS = "chunks";
+
+    public static final String THINKING_STATUTS = "thinkingStatus";
 
 }

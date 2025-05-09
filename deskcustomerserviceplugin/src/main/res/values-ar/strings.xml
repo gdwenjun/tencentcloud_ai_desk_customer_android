@@ -18,6 +18,7 @@
     <string name="product_card_confirm">إرسال معلومات المنتج</string>
     <string name="product_info_input_empty">لا يمكن أن يكون الإدخال فارغًا</string>
     <string name="common_phrases">إرسال البضائع</string>
+    <string name="common_human_service">خدمة إنسانية</string>
     <string name="customer_service_unsupport_tips">يعد المكون الإضافي لخدمة العملاء وظيفة مدفوعة الأجر ذات قيمة مضافة وهو حاليًا في مرحلة الاختبار الداخلي. يرجى النقر للدخول إلى [Tencent Cloud Instant Messaging IM Group] للتقدم بطلب التنشيط التجريبي</string>
     <string name="customer_service_buying_guidelines">مجموعة Tencent Cloud للمراسلة الفورية</string>
     <string name="customer_service_i_know">أرى</string>

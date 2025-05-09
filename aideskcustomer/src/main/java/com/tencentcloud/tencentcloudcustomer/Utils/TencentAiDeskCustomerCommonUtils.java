@@ -51,6 +51,9 @@ public class TencentAiDeskCustomerCommonUtils {
         return info;
     }
     public static TUICustomerServiceProductInfo TencentCustomerInfoToTUICustomerProductInto(TencentAiDeskCustomerProductInfo info){
+        if (info == null) {
+            return null;
+        }
         TUICustomerServiceProductInfo TUIInfo = new TUICustomerServiceProductInfo();
         if(info.getClickAutoSend()!=null){
             TUIInfo.setClickAutoSend(info.getClickAutoSend());

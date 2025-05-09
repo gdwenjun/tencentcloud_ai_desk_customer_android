@@ -7,7 +7,6 @@ import android.view.View;
 import com.tencent.qcloud.deskcore.TUIThemeManager;
 import com.tencent.qcloud.tuikit.deskcommon.bean.TUIMessageBean;
 import com.tencent.qcloud.tuikit.deskcommon.component.face.FaceManager;
-import com.tencent.qcloud.tuikit.deskchat.TUIChatService;
 import com.tencent.qcloud.tuikit.deskchat.bean.message.TextMessageBean;
 import com.tencent.qcloud.tuikit.deskchat.classicui.widget.message.MessageRecyclerView;
 import com.tencent.qcloud.tuikit.deskchat.classicui.widget.message.viewholder.TextMessageHolder;
@@ -112,7 +111,7 @@ public class StreamTextHolder extends TextMessageHolder {
         } else if (!TextUtils.isEmpty(textMessageBean.getExtra())) {
             FaceManager.handlerEmojiText(msgBodyText, textMessageBean.getExtra(), false);
         } else {
-            FaceManager.handlerEmojiText(msgBodyText, TUIChatService.getAppContext().getString(com.tencent.qcloud.tuikit.deskchat.R.string.no_support_msg), false);
+//            FaceManager.handlerEmojiText(msgBodyText, TUIChatService.getAppContext().getString(com.tencent.qcloud.tuikit.deskchat.R.string.no_support_msg), false);
         }
         if (isForwardMode || isReplyDetailMode) {
             return;

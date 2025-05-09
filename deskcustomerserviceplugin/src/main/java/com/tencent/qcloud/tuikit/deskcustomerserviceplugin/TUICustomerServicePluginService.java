@@ -36,12 +36,15 @@ import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.EvaluationMessag
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.InvisibleMessageBean;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.RichTextMessageBean;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.RichTextMessageReplyQuoteBean;
+import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.SeatStatusMessageBean;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.StreamTextMessageBean;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.StreamTextMessageReplyQuoteBean;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.TasksBranchMessageBean;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.TasksBranchMessageReplyQuoteBean;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.TasksCollectionMessageBean;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.TasksCollectionMessageReplyQuoteBean;
+import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.ThinkingBeanReplyQuoteBean;
+import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.ThinkingMessageBean;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.classicui.page.CustomerServiceMemberListActivity;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.classicui.widget.BotBranchHolder;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.classicui.widget.BotBranchReplyView;
@@ -63,11 +66,11 @@ import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.classicui.widget.Task
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.classicui.widget.TasksBranchReplyView;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.classicui.widget.TasksCollectionHolder;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.classicui.widget.TasksCollectionReplyView;
+import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.classicui.widget.ThinkingHolder;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.config.TUICustomerServiceConfig;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.presenter.TUICustomerServicePresenter;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.util.TUICustomerServiceLog;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.util.TUICustomerServiceUtils;
-import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.R;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -87,7 +90,7 @@ public class TUICustomerServicePluginService implements TUIInitializer, ITUINoti
 
     private Context appContext;
     private boolean canTriggerEvaluation = false;
-
+    private InputViewFloatLayerProxy inputViewFloatLayerProxy;
     @Override
     public void init(Context context) {
         appContext = context;
@@ -267,6 +270,24 @@ public class TUICustomerServicePluginService implements TUIInitializer, ITUINoti
         typingParam.put(TUIConstants.TUIChat.Method.RegisterCustomMessage.MESSAGE_BEAN_CLASS, CustomerServiceTypingMessageBean.class);
         TUICore.callService(
             TUIConstants.TUIChat.Method.RegisterCustomMessage.CLASSIC_SERVICE_NAME, TUIConstants.TUIChat.Method.RegisterCustomMessage.METHOD_NAME, typingParam);
+
+        Map<String, Object> seatStatusParam = new HashMap<>();
+        seatStatusParam.put(TUIConstants.TUIChat.Method.RegisterCustomMessage.MESSAGE_BUSINESS_ID,
+                TUIConstants.TUICustomerServicePlugin.CUSTOMER_SERVICE_MESSAGE_KEY + TUIConstants.TUICustomerServicePlugin.BUSINESS_ID_SRC_CUSTOMER_SERVICE_SEAT_STATUS);
+        seatStatusParam.put(TUIConstants.TUIChat.Method.RegisterCustomMessage.MESSAGE_BEAN_CLASS, SeatStatusMessageBean.class);
+        seatStatusParam.put(TUIConstants.TUIChat.Method.RegisterCustomMessage.MESSAGE_VIEW_HOLDER_CLASS, InvisibleHolder.class);
+        TUICore.callService(
+                TUIConstants.TUIChat.Method.RegisterCustomMessage.CLASSIC_SERVICE_NAME, TUIConstants.TUIChat.Method.RegisterCustomMessage.METHOD_NAME, seatStatusParam);
+
+
+        Map<String, Object> thinkingParam = new HashMap<>();
+        thinkingParam.put(TUIConstants.TUIChat.Method.RegisterCustomMessage.MESSAGE_BUSINESS_ID, TUIConstants.TUICustomerServicePlugin.CUSTOMER_SERVICE_MESSAGE_KEY + TUIConstants.TUICustomerServicePlugin.BUSINESS_ID_SRC_CUSTOMER_SERVICE_THINKING);
+        thinkingParam.put(TUIConstants.TUIChat.Method.RegisterCustomMessage.MESSAGE_BEAN_CLASS, ThinkingMessageBean.class);
+        thinkingParam.put(TUIConstants.TUIChat.Method.RegisterCustomMessage.MESSAGE_VIEW_HOLDER_CLASS, ThinkingHolder.class);
+        thinkingParam.put(TUIConstants.TUIChat.Method.RegisterCustomMessage.MESSAGE_REPLY_BEAN_CLASS, ThinkingBeanReplyQuoteBean.class);
+        TUICore.callService(
+                TUIConstants.TUIChat.Method.RegisterCustomMessage.CLASSIC_SERVICE_NAME, TUIConstants.TUIChat.Method.RegisterCustomMessage.METHOD_NAME, thinkingParam);
+
     }
 
     private void initExtension() {
@@ -437,11 +458,14 @@ public class TUICustomerServicePluginService implements TUIInitializer, ITUINoti
             }
             if(TUICustomerServiceConfig.getInstance().getProductInfo()!=null){
                 TUICustomerServiceLog.i("onRaiseExtension","has product info. show product first");
-                InputViewFloatLayerProxy inputViewFloatLayerProxy = new InputViewFloatLayerProxy(chatInfo);
-                inputViewFloatLayerProxy.showFloatLayerContentForProduct(viewGroup);
-            }else if (!TUICustomerServiceConfig.getInstance().getInputViewFloatLayerDataList().isEmpty()) {
-                InputViewFloatLayerProxy inputViewFloatLayerProxy = new InputViewFloatLayerProxy(chatInfo);
-                inputViewFloatLayerProxy.showFloatLayerContent(viewGroup);
+                inputViewFloatLayerProxy = new InputViewFloatLayerProxy(chatInfo, viewGroup);
+                inputViewFloatLayerProxy.showFloatLayerContentForProduct();
+            }
+            if (!TUICustomerServiceConfig.getInstance().getInputViewFloatLayerDataList().isEmpty()) {
+                if (null == inputViewFloatLayerProxy) {
+                    inputViewFloatLayerProxy = new InputViewFloatLayerProxy(chatInfo,viewGroup);
+                }
+                inputViewFloatLayerProxy.showFloatLayerContent();
                 return true;
             }
         }
@@ -449,6 +473,12 @@ public class TUICustomerServicePluginService implements TUIInitializer, ITUINoti
         return false;
     }
 
+    public void updateHumanServiceVis(boolean isVis) {
+        if (inputViewFloatLayerProxy == null) {
+            return;
+        }
+        inputViewFloatLayerProxy.updateHumanServiceVis(isVis);
+    }
     @Override
     public void onNotifyEvent(String key, String subKey, Map<String, Object> param) {}
 

@@ -6,6 +6,25 @@ public class TUIInputViewFloatLayerData {
     private String content;
     private int iconResourceId = -1;
     private InputViewFloatLayerProxy.OnItemClickListener OnItemClickListener;
+    private boolean isDefault = false;
+
+    public boolean isVisible() {
+        return isVisible;
+    }
+
+    public void setVisible(boolean visible) {
+        isVisible = visible;
+    }
+
+    private boolean isVisible = true;
+
+    public boolean isDefault() {
+        return isDefault;
+    }
+
+    public void setDefault(boolean aDefault) {
+        isDefault = aDefault;
+    }
 
     public String getContent() {
         return content;

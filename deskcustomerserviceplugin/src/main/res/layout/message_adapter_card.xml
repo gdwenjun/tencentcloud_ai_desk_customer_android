@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:lines="2"
             android:textSize="12sp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             tools:text="test"/>
         <TextView
             android:id="@+id/tv_card_desc"
@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:lines="1"
-            android:textColor="@color/card_desc_color"
+            android:textColor="@color/white"
             android:textSize="16sp"
             tools:text="￥888" />
     </RelativeLayout>
