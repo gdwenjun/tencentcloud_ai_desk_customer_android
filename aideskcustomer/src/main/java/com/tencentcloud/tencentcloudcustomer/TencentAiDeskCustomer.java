@@ -38,7 +38,7 @@ import java.util.List;
 
 public class TencentAiDeskCustomer {
 
-    public static final String _version = "2.2.8";
+    public static final String _version = "2.2.7";
 
 
     public static final String TAG = TencentAiDeskCustomer.class.getSimpleName();

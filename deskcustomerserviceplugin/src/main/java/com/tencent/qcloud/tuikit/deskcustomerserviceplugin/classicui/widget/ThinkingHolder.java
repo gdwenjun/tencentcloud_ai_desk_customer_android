@@ -9,6 +9,7 @@ import android.widget.ImageView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.tencent.qcloud.tuikit.deskchat.util.TUIChatLog;
 import com.tencent.qcloud.tuikit.deskcommon.bean.TUIMessageBean;
 import com.tencent.qcloud.tuikit.deskcommon.classicui.widget.message.MessageContentHolder;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.R;
@@ -43,11 +44,22 @@ public class ThinkingHolder extends MessageContentHolder {
             handler.postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    ThinkingMessageBean newThinkingMsgBean = (ThinkingMessageBean)mAdapter.getItem(position);
-                    if (newThinkingMsgBean != null) {
-                        rootView.setVisibility(View.GONE);
-                        newThinkingMsgBean.getThinkingBean().setThinkingStatus(1);
-                        mAdapter.onItemRefresh(newThinkingMsgBean);
+                    if (position < 0 || mAdapter == null || rootView == null) {
+                        return;
+                    }
+                    try {
+                        ThinkingMessageBean newThinkingMsgBean = (ThinkingMessageBean)mAdapter.getItem(position);
+                        if (newThinkingMsgBean != null) {
+                            newThinkingMsgBean.getThinkingBean().setThinkingStatus(1);
+                            rootView.setVisibility(View.GONE);
+                            mAdapter.onItemRefresh(newThinkingMsgBean);
+                        }
+                    } catch (ClassCastException e) {
+                        TUIChatLog.e("ThinkingHolder", "ClassCastException failed");
+                        e.printStackTrace();
+                    } catch (Exception e) {
+                        TUIChatLog.e("ThinkingHolder", "Exception failed");
+                        e.printStackTrace();
                     }
                 }
             }, 60000);// 60000

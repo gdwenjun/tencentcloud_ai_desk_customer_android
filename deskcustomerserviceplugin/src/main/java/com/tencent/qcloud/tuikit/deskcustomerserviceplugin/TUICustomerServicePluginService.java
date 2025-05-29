@@ -95,6 +95,7 @@ public class TUICustomerServicePluginService implements TUIInitializer, ITUINoti
     public void init(Context context) {
         appContext = context;
         instance = this;
+        inputViewFloatLayerProxy = new InputViewFloatLayerProxy();
         initTheme();
         initExtension();
         initMessage();
@@ -456,14 +457,16 @@ public class TUICustomerServicePluginService implements TUIInitializer, ITUINoti
             if (!TUICustomerServiceConfig.getInstance().getCustomerServiceAccounts().contains(chatInfo.getId())) {
                 return false;
             }
+            boolean isHaveInit = false;
             if(TUICustomerServiceConfig.getInstance().getProductInfo()!=null){
                 TUICustomerServiceLog.i("onRaiseExtension","has product info. show product first");
-                inputViewFloatLayerProxy = new InputViewFloatLayerProxy(chatInfo, viewGroup);
+                inputViewFloatLayerProxy.init(chatInfo, viewGroup);
+                isHaveInit = true;
                 inputViewFloatLayerProxy.showFloatLayerContentForProduct();
             }
             if (!TUICustomerServiceConfig.getInstance().getInputViewFloatLayerDataList().isEmpty()) {
-                if (null == inputViewFloatLayerProxy) {
-                    inputViewFloatLayerProxy = new InputViewFloatLayerProxy(chatInfo,viewGroup);
+                if (!isHaveInit) {
+                    inputViewFloatLayerProxy.init(chatInfo, viewGroup);
                 }
                 inputViewFloatLayerProxy.showFloatLayerContent();
                 return true;

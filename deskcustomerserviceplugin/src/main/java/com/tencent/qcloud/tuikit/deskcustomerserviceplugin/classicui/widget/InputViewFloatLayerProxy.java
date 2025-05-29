@@ -39,7 +39,11 @@ public class InputViewFloatLayerProxy {
     private ViewGroup rootView;
     private LinearLayout linearLayout;
     private FloatLayerAdapter floatLayerAdapter;
-    public InputViewFloatLayerProxy(ChatInfo chatInfo, ViewGroup viewGroup) {
+    public InputViewFloatLayerProxy() {
+
+    }
+
+    public void init(ChatInfo chatInfo, ViewGroup viewGroup) {
         this.chatInfo = chatInfo;
         this.rootView = viewGroup;
 

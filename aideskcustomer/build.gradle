@@ -50,11 +50,11 @@ dependencies {
     implementation 'io.opentelemetry:opentelemetry-sdk'
 //    implementation 'io.opentelemetry:opentelemetry-semconv'
 
-    api projects.contains("deskcommon") ? project(':deskcommon') : "com.tencentcloud.desk:deskcommon:2.2.8"
-    api projects.contains("deskcore") ? project(':deskcore') : "com.tencentcloud.desk:deskcore:2.2.8"
-    api projects.contains("deskcontact") ? project(':deskcontact') : "com.tencentcloud.desk:deskcontact:2.2.8"
-    api projects.contains("deskchat") ? project(':deskchat') : "com.tencentcloud.desk:deskchat:2.2.8"
-    api projects.contains("deskcustomerserviceplugin") ? project(':deskcustomerserviceplugin') : "com.tencentcloud.desk:deskcustomerserviceplugin:2.2.8"
+    api projects.contains("deskcommon") ? project(':deskcommon') : "com.tencentcloud.desk:deskcommon:2.2.8.10"
+    api projects.contains("deskcore") ? project(':deskcore') : "com.tencentcloud.desk:deskcore:2.2.8.10"
+    api projects.contains("deskcontact") ? project(':deskcontact') : "com.tencentcloud.desk:deskcontact:2.2.8.10"
+    api projects.contains("deskchat") ? project(':deskchat') : "com.tencentcloud.desk:deskchat:2.2.8.10"
+    api projects.contains("deskcustomerserviceplugin") ? project(':deskcustomerserviceplugin') : "com.tencentcloud.desk:deskcustomerserviceplugin:2.2.8.10"
 
 //    implementation libs.appcompat
 //    implementation libs.material

@@ -51,6 +51,6 @@ dependencies {
     if (projects.contains("deskcommon")) {
         api project(':deskcommon')
     } else {
-        api rootProject.getProperties().containsKey("imSdk") ? rootProject.ext.imSdk : "com.tencentcloud.desk:deskcommon:2.2.8"
+        api rootProject.getProperties().containsKey("imSdk") ? rootProject.ext.imSdk : "com.tencentcloud.desk:deskcommon:2.2.8.10"
     }
 }
