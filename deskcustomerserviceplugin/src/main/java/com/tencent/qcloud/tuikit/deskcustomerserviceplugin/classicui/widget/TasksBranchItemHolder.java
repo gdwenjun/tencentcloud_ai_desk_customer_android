@@ -5,7 +5,11 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.R;
+import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.TUICustomerServiceConstants;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.TasksBranchBean;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class TasksBranchItemHolder extends RecyclerView.ViewHolder {
     private View rootView;
@@ -25,12 +29,24 @@ public class TasksBranchItemHolder extends RecyclerView.ViewHolder {
         rootView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // 产品要求点击后先隐藏，再发送消息。这里存在无解的情况是消息要是发送失败了。这里就不能再次显示回列表
-                if (rootView != null && rootView.getRootView() != null && rootView.getRootView().findViewById(R.id.branch_item_list) != null) {
-                    rootView.getRootView().findViewById(R.id.branch_item_list).setVisibility(View.GONE);
-                }
+                TasksBranchBean parent = item.getParent();
                 if (adapter != null && adapter.getPresenter() != null && adapter.getPresenter().allowSelection()) {
-                    adapter.getPresenter().OnItemContentSelected(item.getContent());
+                    if(parent != null && parent.getOptionType() == 1) {
+                        JSONObject jsonObject = new JSONObject();
+                        JSONObject branchOptionInfoJson =new JSONObject();
+                        try {
+                            branchOptionInfoJson.put(TUICustomerServiceConstants.CUSTOMER_SERVICE_TASKID, parent.getTaskInfo().getTaskID());
+                            branchOptionInfoJson.put(TUICustomerServiceConstants.CUSTOMER_SERVICE_ENV, parent.getTaskInfo().getEnv());
+                            branchOptionInfoJson.put(TUICustomerServiceConstants.CUSTOMER_SERVICE_NODEID, parent.getTaskInfo().getNodeID());
+                            jsonObject.putOpt("BranchOptionInfo", branchOptionInfoJson);
+                        } catch (JSONException e) {
+                            throw new RuntimeException(e);
+                        }
+                        String cloudCustomData = jsonObject.toString();
+                        adapter.getPresenter().OnItemContentSelected(item.getContent(), cloudCustomData);
+                    } else {
+                        adapter.getPresenter().OnItemContentSelected(item.getContent());
+                    }
                 }
             }
         });

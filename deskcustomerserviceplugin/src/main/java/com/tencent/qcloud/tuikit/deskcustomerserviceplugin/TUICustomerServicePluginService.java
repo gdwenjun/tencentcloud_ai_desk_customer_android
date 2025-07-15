@@ -28,6 +28,8 @@ import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.BranchMessageBea
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.BranchMessageReplyQuoteBean;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.CardMessageBean;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.CardMessageReplyQuoteBean;
+import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.ClientTipsMessageBean;
+import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.ClientTipsBeanReplyQuoteBean;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.CollectionMessageBean;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.CollectionMessageReplyQuoteBean;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.CustomerServiceTypingMessageBean;
@@ -52,6 +54,8 @@ import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.classicui.widget.Bran
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.classicui.widget.BranchReplyView;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.classicui.widget.CardHolder;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.classicui.widget.CardReplyView;
+import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.classicui.widget.ClientTipsHolder;
+import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.classicui.widget.ClientTipsReplyView;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.classicui.widget.CollectionHolder;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.classicui.widget.CollectionReplyView;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.classicui.widget.EvaluationHolder;
@@ -288,6 +292,16 @@ public class TUICustomerServicePluginService implements TUIInitializer, ITUINoti
         thinkingParam.put(TUIConstants.TUIChat.Method.RegisterCustomMessage.MESSAGE_REPLY_BEAN_CLASS, ThinkingBeanReplyQuoteBean.class);
         TUICore.callService(
                 TUIConstants.TUIChat.Method.RegisterCustomMessage.CLASSIC_SERVICE_NAME, TUIConstants.TUIChat.Method.RegisterCustomMessage.METHOD_NAME, thinkingParam);
+
+        Map<String, Object> clientTipsParam = new HashMap<>();
+        clientTipsParam.put(TUIConstants.TUIChat.Method.RegisterCustomMessage.MESSAGE_BUSINESS_ID, TUIConstants.TUICustomerServicePlugin.CUSTOMER_SERVICE_MESSAGE_KEY + TUIConstants.TUICustomerServicePlugin.BUSINESS_ID_SRC_CUSTOMER_SERVICE_CLIENT_TIPS);
+        clientTipsParam.put(TUIConstants.TUIChat.Method.RegisterCustomMessage.MESSAGE_BEAN_CLASS, ClientTipsMessageBean.class);
+        clientTipsParam.put(TUIConstants.TUIChat.Method.RegisterCustomMessage.MESSAGE_VIEW_HOLDER_CLASS, ClientTipsHolder.class);
+        clientTipsParam.put(TUIConstants.TUIChat.Method.RegisterCustomMessage.MESSAGE_REPLY_BEAN_CLASS, ClientTipsBeanReplyQuoteBean.class);
+        clientTipsParam.put(TUIConstants.TUIChat.Method.RegisterCustomMessage.MESSAGE_REPLY_VIEW_CLASS, ClientTipsReplyView.class);
+        clientTipsParam.put(TUIConstants.TUIChat.Method.RegisterCustomMessage.IS_NEED_EMPTY_VIEW_GROUP, true);
+        TUICore.callService(
+                TUIConstants.TUIChat.Method.RegisterCustomMessage.CLASSIC_SERVICE_NAME, TUIConstants.TUIChat.Method.RegisterCustomMessage.METHOD_NAME, clientTipsParam);
 
     }
 

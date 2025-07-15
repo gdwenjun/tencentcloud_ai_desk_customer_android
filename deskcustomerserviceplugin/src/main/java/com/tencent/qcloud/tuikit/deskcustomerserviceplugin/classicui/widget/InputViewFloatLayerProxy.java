@@ -83,6 +83,11 @@ public class InputViewFloatLayerProxy {
             @Override
             public void onItemClick(View view, int position) {
                 TUIInputViewFloatLayerData data = dataList.get(position);
+                if (data.isDefault()) {
+                    TUICustomerServicePresenter presenter = new TUICustomerServicePresenter();
+                    presenter.sendTextMessage(chatInfo.getId(), data.getContent());
+                    return;
+                }
                 if(data.getOnItemClickListener()!=null){
                     data.getOnItemClickListener().onItemClick(view, position);
                 }

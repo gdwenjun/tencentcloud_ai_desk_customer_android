@@ -85,6 +85,17 @@ public class TUICustomerServicePresenter {
         TUIChatService.getInstance().sendMessage(messageBean, chatID, V2TIMConversation.V2TIM_C2C, false);
     }
 
+    public void OnItemContentSelected(String content, String cloudCustomData)  {
+        if (messageBean == null) {
+            TUICustomerServiceLog.e(TAG, "OnItemContentSelected, messageBean is null");
+            return;
+        }
+
+        String chatID = messageBean.getUserId();
+        TUIMessageBean messageBean = ChatMessageBuilder.buildTextMessage(content, cloudCustomData);
+        TUIChatService.getInstance().sendMessage(messageBean, chatID, V2TIMConversation.V2TIM_C2C, false);
+    }
+
     public void sendTextMessage(String userID, String content) {
         TUIMessageBean messageBean = ChatMessageBuilder.buildTextMessage(content);
         TUIChatService.getInstance().sendMessage(messageBean, userID, V2TIMConversation.V2TIM_C2C, false);

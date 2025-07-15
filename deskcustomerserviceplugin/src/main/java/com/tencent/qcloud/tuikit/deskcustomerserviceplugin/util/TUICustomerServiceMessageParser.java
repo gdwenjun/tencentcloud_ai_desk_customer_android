@@ -7,6 +7,7 @@ import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.TUICustomerServiceCon
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.BotBranchBean;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.BranchBean;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.CardBean;
+import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.ClientTipsBean;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.CollectionBean;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.EvaluationBean;
 import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.bean.SeatStatusBean;
@@ -90,6 +91,17 @@ public class TUICustomerServiceMessageParser {
             JSONObject contentJson = new JSONObject(branchJson.optString(TUICustomerServiceConstants.CUSTOMER_SERVICE_CONTENT));
             branchBean.setNodeStatus(TasksBranchBean.NodeStatus.values()[branchJson.getInt(TUICustomerServiceConstants.CUSTOMER_SERVICE_STATUS)]);
 
+            int optionType = branchJson.getInt(TUICustomerServiceConstants.CUSTOMER_SERVICE_OPTION_TYPE);
+            branchBean.setOptionType(optionType);
+            if (optionType == 1) {
+                TasksBranchBean.TaskInfo taskInfo = new TasksBranchBean.TaskInfo();
+                JSONObject taskInfoJson = branchJson.optJSONObject(TUICustomerServiceConstants.CUSTOMER_SERVICE_TASKINFO);
+                taskInfo.setTaskID(taskInfoJson.optInt(TUICustomerServiceConstants.CUSTOMER_SERVICE_TASKID));
+                taskInfo.setNodeID(taskInfoJson.optString(TUICustomerServiceConstants.CUSTOMER_SERVICE_NODEID));
+                taskInfo.setEnv(taskInfoJson.optString(TUICustomerServiceConstants.CUSTOMER_SERVICE_ENV));
+                branchBean.setTaskInfo(taskInfo);
+            }
+
             branchBean.setHead(contentJson.optString(TUICustomerServiceConstants.CUSTOMER_SERVICE_HEADER));
             branchBean.setTail(contentJson.optString(TUICustomerServiceConstants.CUSTOMER_SERVICE_TAIL));
             String selectItemString = contentJson.optString(TUICustomerServiceConstants.CUSTOMER_SERVICE_ITEM_SELECTED);
@@ -111,6 +123,7 @@ public class TUICustomerServiceMessageParser {
                     JSONObject itemObject = itemJsonArray.optJSONObject(i);
                     if (itemObject != null) {
                         TasksBranchBean.Item item = new TasksBranchBean.Item();
+                        item.setParent(branchBean);
                         item.setContent(itemObject.optString(TUICustomerServiceConstants.CUSTOMER_SERVICE_ITEM_CONTENT));
                         item.setDescription(itemObject.optString(TUICustomerServiceConstants.CUSTOMER_SERVICE_ITEM_DESCRIPTION));
                         itemList.add(item);
@@ -434,6 +447,24 @@ public class TUICustomerServiceMessageParser {
             e.printStackTrace();
         }
         return seatStatusBean;
+    }
+
+    public static ClientTipsBean getClientTipsInfo(V2TIMMessage v2TIMMessage) {
+        V2TIMCustomElem customElem = v2TIMMessage.getCustomElem();
+        if (customElem == null || customElem.getData() == null || customElem.getData().length == 0) {
+            TUICustomerServiceLog.e(TAG, "getClientTimeOutInfo fail, customElem or data is empty");
+            return null;
+        }
+
+        ClientTipsBean thinkingBean = new ClientTipsBean();
+        String data = new String(customElem.getData());
+        try {
+            JSONObject jsonObject = new JSONObject(data);
+            thinkingBean.setContent(jsonObject.getString(TUICustomerServiceConstants.CUSTOMER_SERVICE_CONTENT));
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return thinkingBean;
     }
 
 }

@@ -9,6 +9,7 @@ public class TUICustomerServiceConstants {
     public static final String CUSTOMER_SERVICE_HEADER = "header";
     public static final String CUSTOMER_SERVICE_TIP = "tip";
     public static final String CUSTOMER_SERVICE_ITEMS = "items";
+    public static final String CUSTOMER_SERVICE_TASKINFO = "taskInfo";
     public static final String CUSTOMER_SERVICE_INPUTVARIABLES = "inputVariables";
     public static final String CUSTOMER_SERVICE_CHOOSEITEMLIST = "chooseItemList";
     public static final String CUSTOMER_SERVICE_MENU_CONTENT = "menuContent";
@@ -25,6 +26,8 @@ public class TUICustomerServiceConstants {
     public static final String CUSTOMER_SERVICE_ITEM_DESCRIPTION = "desc";
     public static final String CUSTOMER_SERVICE_ITEM_SELECTED = "selected";
     public static final String CUSTOMER_SERVICE_ITEM_NODE_STATUS = "nodeStatus";
+    public static final String CUSTOMER_SERVICE_OPTION_TYPE = "optionType";
+
     public static final String CUSTOMER_SERVICE_ITEM_MENU_SELECTED = "menuSelected";
     public static final String CUSTOMER_SERVICE_TAIL = "tail";
     public static final String CUSTOMER_SERVICE_SESSION_ID = "sessionId";
@@ -40,4 +43,7 @@ public class TUICustomerServiceConstants {
 
     public static final String THINKING_STATUTS = "thinkingStatus";
 
+    public static final String CUSTOMER_SERVICE_TASKID = "taskID";
+    public static final String CUSTOMER_SERVICE_NODEID = "nodeID";
+    public static final String CUSTOMER_SERVICE_ENV = "env";
 }

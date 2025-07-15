@@ -52,7 +52,8 @@ public class TasksBranchHolder extends MessageBaseHolder {
             }
             listLayout.setPresenter(presenter);
             listLayout.setVisibility(View.VISIBLE);
-            if (!presenter.allowSelection() && !TUICustomerServiceConfig.getInstance().getShowItemsAfterClick()) {
+
+            if (!presenter.allowSelection() && branchBean.getOptionType() == 0) {
                 listLayout.setVisibility(View.GONE);
             }
             listLayout.setBranchItemList(branchBean.getItemList());

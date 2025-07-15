@@ -70,5 +70,5 @@ dependencies {
     implementation 'androidx.datastore:datastore-preferences-rxjava3:1.0.0'
     implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
     annotationProcessor 'com.google.auto.service:auto-service:1.1.1'
-    api projects.contains("deskcommon") ? project(':deskcommon') : "com.tencentcloud.desk:deskcommon:2.2.8.10"
+    api projects.contains("deskcommon") ? project(':deskcommon') : "com.tencentcloud.desk:deskcommon:2.2.8.12"
 }

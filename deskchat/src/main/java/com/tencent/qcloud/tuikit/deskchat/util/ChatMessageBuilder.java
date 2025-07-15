@@ -41,6 +41,17 @@ public class ChatMessageBuilder {
         return textMessageBean;
     }
 
+    public static TextMessageBean buildTextMessage(String message, String cloudCustomData) {
+        V2TIMMessage v2TIMMessage = V2TIMManager.getMessageManager().createTextMessage(message);
+
+        v2TIMMessage.setCloudCustomData(cloudCustomData);
+        TextMessageBean textMessageBean = new TextMessageBean();
+        textMessageBean.setCommonAttribute(v2TIMMessage);
+
+        textMessageBean.onProcessMessage(v2TIMMessage);
+        return textMessageBean;
+    }
+
     public static TextAtMessageBean buildTextAtMessage(List<String> atUserList, String message) {
         V2TIMMessage v2TIMMessage = V2TIMManager.getMessageManager().createTextAtMessage(message, atUserList);
         TextAtMessageBean textAtMessageBean = new TextAtMessageBean();

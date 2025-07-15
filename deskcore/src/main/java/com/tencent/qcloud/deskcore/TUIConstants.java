@@ -996,6 +996,8 @@ public final class TUIConstants {
         public static final String BUSINESS_ID_SRC_CUSTOMER_SERVICE_TASKS_BRANCH = "32";
         public static final String BUSINESS_ID_SRC_CUSTOMER_SERVICE_TASKS_COLLECTION = "33";
         public static final String BUSINESS_ID_SRC_CUSTOMER_SERVICE_THINKING = "35";
+        public static final String BUSINESS_ID_SRC_CUSTOMER_SERVICE_CLIENT_TIPS = "37";    // 用户超时提醒消息类型
+        public static final String BUSINESS_ID_SRC_CUSTOMER_SERVICE_AGENT_TIPS = "38";    // 用户超时提醒客服消息类型
         public static final String METHOD_GET_CUSTOMER_SERVICE_ACCOUNTS = "getCustomerServiceAccounts";
     }
 
