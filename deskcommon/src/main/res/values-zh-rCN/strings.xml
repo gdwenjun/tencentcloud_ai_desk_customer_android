@@ -29,5 +29,6 @@
 
     <string name="translation_support">由腾讯云 IM 提供翻译支持</string>
     <string name="timcommon_no_support_msg">不支持的自定义消息</string>
+    <string name="ai_generated_tip">该回复由AI生成，内容仅供参考</string>
 
 </resources>

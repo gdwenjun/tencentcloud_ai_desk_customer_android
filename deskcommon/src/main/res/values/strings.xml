@@ -29,5 +29,6 @@
 
     <string name="timcommon_no_support_msg">Unsupported custom messages</string>
     <string name="translation_support">Translated by Tencent Cloud Chat</string>
+    <string name="ai_generated_tip">AI-Generated Content</string>
 
 </resources>

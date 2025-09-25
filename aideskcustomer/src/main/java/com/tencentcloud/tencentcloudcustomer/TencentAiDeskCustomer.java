@@ -47,7 +47,7 @@ public class TencentAiDeskCustomer {
         private static final TencentAiDeskCustomer instance = new TencentAiDeskCustomer();
     }
     private static TencentAiDeskCustomer instance;
-
+    private String currentServiceUserId = TUICustomerServiceConstants.DEFAULT_CUSTOMER_SERVICE_ACCOUNT;
     public static TencentAiDeskCustomer getInstance() {
 
         return TencentAiDeskCustomerHolder.instance;
@@ -114,6 +114,13 @@ public class TencentAiDeskCustomer {
         persenter.sendTextMessage(TUICustomerServiceConstants.DEFAULT_CUSTOMER_SERVICE_ACCOUNT,text);
         TencentAiDeskCustomerReport.reportInfo("send text message end");
     }
+
+    public void sendTextMessage(String userId, String text){
+        TUICustomerServicePresenter persenter = new TUICustomerServicePresenter();
+        persenter.sendTextMessage(userId,text);
+        TencentAiDeskCustomerReport.reportInfo("send text message end");
+    }
+    
     public Intent getTencentCloudCustomerChatIntent(Context context){
         return  getInstance().getIntentInner(context,null);
     }
@@ -140,7 +147,7 @@ public class TencentAiDeskCustomer {
             TencentAiDeskCustomerReport.reportInfo("getTencentCloudCustomerChatIntent", "set customer service account"+currentValidateUserId);
             TUICustomerServiceConfig.getInstance().setCustomerServiceAccounts(currentValidateUserId);
         }
-
+        this.currentServiceUserId = userId;
         intent.putExtra(TUIConstants.TUIChat.CHAT_ID, userId);
         intent.putExtra(TUIConstants.TUIChat.CHAT_TYPE, V2TIMConversation.V2TIM_C2C);
         TencentAiDeskCustomerReport.reportInfo("get success. userid: "+ userId + " all userIDs is "+currentValidateUserId);
@@ -182,7 +189,7 @@ public class TencentAiDeskCustomer {
                 public void onItemClick(View view, int position) {
                     if(s.getAutoSendMessageUseContent()){
                         if(s.getContent()!=null){
-                            getInstance().sendTextMessage(s.getContent());
+                            getInstance().sendTextMessage(currentServiceUserId, s.getContent());
                         }else{
                             TencentAiDeskCustomerReport.reportInfo("setQuickMessages","auto send message failed. content is null");
                         }

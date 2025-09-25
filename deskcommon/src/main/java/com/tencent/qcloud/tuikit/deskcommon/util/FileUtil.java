@@ -37,7 +37,7 @@ import java.util.Random;
 public class FileUtil {
     public static final String DOCUMENTS_DIR = "documents";
 
-    public static final String FILE_PROVIDER_AUTH = ".timcommon.fileprovider";
+    public static final String FILE_PROVIDER_AUTH = ".deskcommon.fileprovider";
 
     public static final int SIZETYPE_B = 1;
     public static final int SIZETYPE_KB = 2;

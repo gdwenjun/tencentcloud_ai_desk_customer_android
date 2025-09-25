@@ -210,6 +210,16 @@ public class TUICustomerServicePresenter {
             productJson.put(TUICustomerServiceConstants.CUSTOMER_SERVICE_ITEM_DESCRIPTION, productInfo.getDescription());
             productJson.put(TUICustomerServiceConstants.CUSTOMER_SERVICE_CARD_PIC, productInfo.getPictureUrl());
             productJson.put(TUICustomerServiceConstants.CUSTOMER_SERVICE_CARD_URL, productInfo.getJumpUrl());
+            if (productInfo.getData() != null) {
+                JSONArray jsonList = new JSONArray();
+                for (String key : productInfo.getData().keySet()) {
+                    JSONObject jsonObject = new JSONObject();
+                    jsonObject.put(TUICustomerServiceConstants.CUSTOMER_SERVICE_ITEM_NAME, key);
+                    jsonObject.put(TUICustomerServiceConstants.CUSTOMER_SERVICE_ITEM_VALUE, productInfo.getData().get(key));
+                    jsonList.put(jsonObject);
+                }
+                productJson.put(TUICustomerServiceConstants.CUSTOMER_SERVICE_CARD_CUSTOM_FIELD, jsonList);
+            }
             productMessageJson.put(TUICustomerServiceConstants.CUSTOMER_SERVICE_CONTENT, productJson);
         } catch (JSONException e) {
             throw new RuntimeException(e);

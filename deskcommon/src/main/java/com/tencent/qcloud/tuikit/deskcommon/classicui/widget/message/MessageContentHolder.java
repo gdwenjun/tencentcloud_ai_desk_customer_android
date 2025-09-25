@@ -149,6 +149,8 @@ public abstract class MessageContentHolder<T extends TUIMessageBean> extends Mes
         if (isNeedShowBottomLayout) {
             setBottomContent(msg);
         }
+        // 为非自己发送的消息添加AI提示
+        setAiGeneratedTip(msg);
         bottomFailedIv.setVisibility(View.GONE);
         if (hasRiskContent) {
             bottomContentFrameLayout.setBackgroundResource(R.drawable.chat_message_bottom_area_risk_bg);
@@ -720,5 +722,59 @@ public abstract class MessageContentHolder<T extends TUIMessageBean> extends Mes
 
     public void setShowRead(boolean showRead) {
         isShowRead = showRead;
+    }
+
+    /**
+     * 为非自己发送的消息添加AI生成提示
+     */
+    private void setAiGeneratedTip(TUIMessageBean msg) {
+        // 如果不是自己发送的消息，且不是转发模式，则显示AI提示
+        boolean isCustomMessage = msg.getMsgType() == V2TIMMessage.V2TIM_ELEM_TYPE_CUSTOM;
+        // 获取自定义消息的data字段
+        String customData = null;
+        if (isCustomMessage && msg.getV2TIMMessage() != null) {
+            customData = msg.getV2TIMMessage().getCloudCustomData();
+        }
+        boolean isNeedShowAiTip = false;
+        if (!msg.isSelf() && !isForwardMode && !isReplyDetailMode && isCustomMessage) {
+            if (customData != null && !TextUtils.isEmpty(customData)) {
+                try {
+                    org.json.JSONObject jsonObject = new org.json.JSONObject(customData);
+                    String messageType = jsonObject.optString("messageType", "");
+                    String role = jsonObject.optString("role", "");
+                    if ("robot".equals(role) &&
+                        ( "fallback".equals(messageType) || "aiReply".equals(messageType) || "faq".equals(messageType) )) {
+                        isNeedShowAiTip = true;
+                    }
+                } catch (Exception e) {
+
+                }
+            }
+        }
+        if (isNeedShowAiTip) {
+            // 检查是否已经存在AI提示
+            if (bottomContentFrameLayout.getChildCount() == 0) {
+                // 创建AI提示文本视图
+                TextView aiTipText = new TextView(itemView.getContext());
+                aiTipText.setText(R.string.ai_generated_tip);
+                aiTipText.setTextSize(10);
+                aiTipText.setTextColor(itemView.getResources().getColor(R.color.text_gray1));
+                aiTipText.setPadding(8, 4, 8, 4);
+                aiTipText.setGravity(Gravity.CENTER);
+                
+                // 设置背景
+                aiTipText.setBackgroundResource(R.drawable.chat_message_bottom_area_bg);
+                
+                // 添加到底部内容区域
+                bottomContentFrameLayout.addView(aiTipText);
+                bottomContentFrameLayout.setVisibility(View.VISIBLE);
+            }
+        } else {
+            // 如果是自己发送的消息或者是转发模式，隐藏AI提示
+            if (bottomContentFrameLayout.getChildCount() > 0) {
+                bottomContentFrameLayout.removeAllViews();
+                bottomContentFrameLayout.setVisibility(View.GONE);
+            }
+        }
     }
 }

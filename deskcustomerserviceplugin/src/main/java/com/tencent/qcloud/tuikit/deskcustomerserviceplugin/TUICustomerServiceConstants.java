@@ -17,6 +17,7 @@ public class TUICustomerServiceConstants {
     public static final String CUSTOMER_SERVICE_MENU = "menu";
     public static final String CUSTOMER_SERVICE_ITEM_ID = "id";
     public static final String CUSTOMER_SERVICE_ITEM_NAME = "name";
+    public static final String CUSTOMER_SERVICE_ITEM_VALUE = "value";
     public static final String CUSTOMER_SERVICE_ITEM_PLACEHOLDER = "placeholder";
     public static final String CUSTOMER_SERVICE_ITEM_TYPE = "type";
     public static final String CUSTOMER_SERVICE_ITEM_FORMTYPE = "formType";
@@ -35,6 +36,7 @@ public class TUICustomerServiceConstants {
     public static final String CUSTOMER_SERVICE_TYPE = "type";
     public static final String CUSTOMER_SERVICE_CARD_PIC = "pic";
     public static final String CUSTOMER_SERVICE_CARD_URL = "url";
+    public static final String CUSTOMER_SERVICE_CARD_CUSTOM_FIELD = "customField";
     public static final String BOT_SUBTYPE_WELCOME_MSG = "welcome_msg";
     public static final String BOT_SUBTYPE_CLARIFY_MSG = "clarify_msg";
     public static final String BOT_SUBTYPE = "subtype";
