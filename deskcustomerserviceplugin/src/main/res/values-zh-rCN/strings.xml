@@ -19,6 +19,8 @@
     <string name="product_info_input_empty">输入不能为空</string>
     <string name="common_phrases">常用语</string>
     <string name="common_human_service">人工服务</string>
+    <string name="common_service_rating">服务评价</string>
+    <string name="common_service_end">结束会话</string>
     <string name="customer_service_unsupport_tips">客服插件是增值付费功能，当前处于内测阶段，请点击进入[腾讯云即时通信 IM 群]申请开通试用</string>
     <string name="customer_service_buying_guidelines">腾讯云即时通信 IM 群</string>
     <string name="customer_service_i_know">我知道了</string>

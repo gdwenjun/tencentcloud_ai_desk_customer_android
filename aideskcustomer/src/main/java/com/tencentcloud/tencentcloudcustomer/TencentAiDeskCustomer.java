@@ -214,9 +214,22 @@ public class TencentAiDeskCustomer {
         TencentAiDeskCustomerReport.reportInfo("set product info " + info.toString());
     }
 
+    // 显示人工服务（仅在转人工成功前显示）
     public void setShowHumanService(boolean showHumanService){
         TUICustomerServiceConfig.getInstance().setShowHumanService(showHumanService);
         TencentAiDeskCustomerReport.reportInfo("set setShowHumanService " + showHumanService);
+    }
+
+    // 显示服务评价（仅在转人工成功后显示）
+    public void setShowServiceRating(boolean showServiceRating){
+        TUICustomerServiceConfig.getInstance().setShowServiceRating(showServiceRating);
+        TencentAiDeskCustomerReport.reportInfo("set setShowServiceRating " + showServiceRating);
+    }
+
+    // 显示结束对话（仅在转人工成功后显示）
+    public void setShowEndHumanService(boolean showEndHumanService){
+        TUICustomerServiceConfig.getInstance().setShowEndHumanService(showEndHumanService);
+        TencentAiDeskCustomerReport.reportInfo("set setShowEndHumanService " + showEndHumanService);
     }
 
     public String getCrashLogDir(){

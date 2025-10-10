@@ -990,6 +990,7 @@ public final class TUIConstants {
         public static final String BUSINESS_ID_SRC_CUSTOMER_SERVICE_EVALUATION_SETTING = "23";
         public static final String BUSINESS_ID_SRC_CUSTOMER_SERVICE_TRIGGER_EVALUATION = "24";
         public static final String BUSINESS_ID_SRC_CUSTOMER_SERVICE_SEAT_STATUS = "26";
+        public static final String BUSINESS_ID_SRC_CUSTOMER_SERVICE_END_SERVICE = "27";
         public static final String BUSINESS_ID_SRC_CUSTOMER_SERVICE_BOT_RESPONSE = "29"; // Supported in 8.1 and later
         public static final String BUSINESS_ID_SRC_CUSTOMER_SERVICE_BOT_RICH_TEXT = "30"; // Supported in 8.1 and later
         public static final String BUSINESS_ID_SRC_CUSTOMER_SERVICE_BOT_STREAM_TEXT = "31"; // Supported in 8.1 and later

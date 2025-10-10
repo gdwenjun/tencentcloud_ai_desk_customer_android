@@ -19,6 +19,8 @@
     <string name="product_info_input_empty">Input cannot be empty</string>
     <string name="common_phrases">Common Phrases</string>
     <string name="common_human_service">human service</string>
+    <string name="common_service_rating">Service evaluation</string>
+    <string name="common_service_end">End conversation</string>
     <string name="customer_service_unsupport_tips">Customer Service is a value-added payment feature, which is currently in the internal testing stage. Click to enter [Tencent Cloud Instant messaging IM Group] to apply for activation and trial.</string>
     <string name="customer_service_buying_guidelines">Tencent Cloud Instant messaging IM Group</string>
     <string name="customer_service_i_know">I got it</string>

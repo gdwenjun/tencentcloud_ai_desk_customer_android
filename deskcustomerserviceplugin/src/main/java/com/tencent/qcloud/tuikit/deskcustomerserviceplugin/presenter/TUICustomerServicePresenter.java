@@ -101,6 +101,26 @@ public class TUICustomerServicePresenter {
         TUIChatService.getInstance().sendMessage(messageBean, userID, V2TIMConversation.V2TIM_C2C, false);
     }
 
+    public void sendEndHumanService(String userID) {
+        JSONObject getEvaluationSettingJson = new JSONObject();
+        try {
+            getEvaluationSettingJson.put(TUIConstants.TUICustomerServicePlugin.CUSTOMER_SERVICE_MESSAGE_KEY, 0);
+            getEvaluationSettingJson.put(TUIConstants.TUICustomerServicePlugin.CUSTOMER_SERVICE_BUSINESS_ID_SRC_KEY,
+                    TUIConstants.TUICustomerServicePlugin.BUSINESS_ID_SRC_CUSTOMER_SERVICE_END_SERVICE);
+            JSONObject lanJson = new JSONObject();
+            String lang = Locale.getDefault().getLanguage();
+            lanJson.put(TUIConstants.TUICustomerServicePlugin.BUSINESS_ID_SRC_CUSTOMER_SERVICE_TRIGGERED_LANGUAGE, lang);
+            getEvaluationSettingJson.put(TUIConstants.TUICustomerServicePlugin.BUSINESS_ID_SRC_CUSTOMER_SERVICE_TRIGGERED_CONTENT, lanJson);
+        } catch (JSONException e) {
+            throw new RuntimeException(e);
+        }
+
+        if (!TextUtils.isEmpty(getEvaluationSettingJson.toString())) {
+            TUIMessageBean messageBean = ChatMessageBuilder.buildCustomMessage(getEvaluationSettingJson.toString(), "", null);
+            TUIChatService.getInstance().sendMessage(messageBean, userID, V2TIMConversation.V2TIM_C2C, true);
+        }
+    }
+
     public void sendHelloMessage(String userID) {
         JSONObject getEvaluationSettingJson = new JSONObject();
         try {

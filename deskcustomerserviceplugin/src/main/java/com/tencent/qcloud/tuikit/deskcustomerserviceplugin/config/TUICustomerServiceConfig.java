@@ -19,9 +19,27 @@ public class TUICustomerServiceConfig {
         if (instance == null) {
             instance = new TUICustomerServiceConfig();
             instance.inputViewFloatLayerDataList = new ArrayList<>();
-            getInstance().defaultFloatLayerData.setDefault(true);
-            getInstance().defaultFloatLayerData.setIconResourceId(R.drawable.to_human);
-            instance.inputViewFloatLayerDataList.add(getInstance().defaultFloatLayerData);
+            TUIInputViewFloatLayerData humanBtnService = new TUIInputViewFloatLayerData();
+            humanBtnService.setDefault(true);
+            humanBtnService.setIconResourceId(R.drawable.to_human);
+            humanBtnService.setPresetId("humanService");
+            getInstance().defaultFloatLayerData.add(humanBtnService);
+
+            TUIInputViewFloatLayerData serviceRatingBtn = new TUIInputViewFloatLayerData();
+            serviceRatingBtn.setDefault(true);
+            serviceRatingBtn.setVisible(false);
+            serviceRatingBtn.setPresetId("serviceRating");
+            serviceRatingBtn.setIconResourceId(R.drawable.service_rating);
+            getInstance().defaultFloatLayerData.add(serviceRatingBtn);
+
+            TUIInputViewFloatLayerData endServiceBtn = new TUIInputViewFloatLayerData();
+            endServiceBtn.setDefault(true);
+            endServiceBtn.setVisible(false);
+            endServiceBtn.setPresetId("endHumanService");
+            endServiceBtn.setIconResourceId(R.drawable.end_human_service);
+            getInstance().defaultFloatLayerData.add(endServiceBtn);
+
+            instance.inputViewFloatLayerDataList.addAll(getInstance().defaultFloatLayerData);
         }
 
         return instance;
@@ -29,7 +47,7 @@ public class TUICustomerServiceConfig {
 
 
     private TUICustomerServiceProductInfo productInfo;
-    private TUIInputViewFloatLayerData defaultFloatLayerData = new TUIInputViewFloatLayerData();
+    private List<TUIInputViewFloatLayerData> defaultFloatLayerData = new ArrayList<>();
     private List<TUIInputViewFloatLayerData> inputViewFloatLayerDataList = new ArrayList<>();
     private List<String> customerServiceAccounts = new ArrayList<>();
 
@@ -43,6 +61,27 @@ public class TUICustomerServiceConfig {
 
     private boolean isShowHumanService = false;
 
+    private boolean isShowServiceRating = false;
+
+    public void setShowServiceRating(boolean showServiceRating) {
+        isShowServiceRating = showServiceRating;
+    }
+
+    public boolean getShowServiceRating() {
+        return isShowServiceRating;
+    }
+
+    private boolean isShowEndHumanService = false;
+
+    public void setShowEndHumanService(boolean showEndHumanService) {
+        isShowEndHumanService = showEndHumanService;
+    }
+
+    public boolean getShowEndHumanService() {
+        return isShowEndHumanService;
+    }
+
+
     public List<TUIInputViewFloatLayerData> getInputViewFloatLayerDataList() {
         return inputViewFloatLayerDataList;
     }
@@ -53,7 +92,7 @@ public class TUICustomerServiceConfig {
 
     public void setInputViewFloatLayerDataList(List<TUIInputViewFloatLayerData> inputViewFloatLayerDataList) {
         this.inputViewFloatLayerDataList.clear();
-        this.inputViewFloatLayerDataList.add(defaultFloatLayerData);
+        this.inputViewFloatLayerDataList.addAll(defaultFloatLayerData);
         this.inputViewFloatLayerDataList.addAll(inputViewFloatLayerDataList);
     }
 

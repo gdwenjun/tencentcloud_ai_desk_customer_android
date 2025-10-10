@@ -85,7 +85,16 @@ public class InputViewFloatLayerProxy {
                 TUIInputViewFloatLayerData data = dataList.get(position);
                 if (data.isDefault()) {
                     TUICustomerServicePresenter presenter = new TUICustomerServicePresenter();
-                    presenter.sendTextMessage(chatInfo.getId(), data.getContent());
+                    String presetId = data.getPresetId();
+                    if (presetId != null && presetId.equals("humanService")) {
+                        presenter.sendTextMessage(chatInfo.getId(), data.getContent());
+                    }
+                    if (presetId != null && presetId.equals("serviceRating")) {
+                        presenter.triggerEvaluation(chatInfo.getId());
+                    }
+                    if (presetId != null && presetId.equals("endHumanService")) {
+                        presenter.sendEndHumanService(chatInfo.getId());
+                    }
                     return;
                 }
                 if(data.getOnItemClickListener()!=null){
@@ -99,7 +108,10 @@ public class InputViewFloatLayerProxy {
         if (floatLayerAdapter == null) {
             return;
         }
+
         floatLayerAdapter.updateItem(0,isVis);
+        floatLayerAdapter.updateItem(1, !isVis);
+        floatLayerAdapter.updateItem(2, !isVis);
     }
     // 商品卡片
     public void showFloatLayerContentForProduct(){
@@ -220,13 +232,36 @@ public class InputViewFloatLayerProxy {
                     }
                 }
             });
-            if (data.isDefault()) {
+            if (!data.isDefault()) {
+                return;
+            }
+            String presetId = data.getPresetId();
+            if (presetId != null && presetId.equals("humanService")) {
                 int visible = data.isVisible() && TUICustomerServiceConfig.getInstance().getIsShowHumanService()? View.VISIBLE:View.GONE;
                 holder.tvFloatLayer.setText(rootView.getContext().getString(R.string.common_human_service));
                 data.setContent(rootView.getContext().getString(R.string.common_human_service));
                 // 不想显示人工服务，可直接在这里修改隐藏
                 holder.tvFloatIcon.setVisibility(visible);
                 holder.tvFloatLayer.setVisibility(visible);
+                return;
+            }
+            if (presetId != null &&  presetId.equals("serviceRating")) {
+                int visible = data.isVisible() && TUICustomerServiceConfig.getInstance().getShowServiceRating()? View.VISIBLE:View.GONE;
+                holder.tvFloatLayer.setText(rootView.getContext().getString(R.string.common_service_rating));
+                data.setContent(rootView.getContext().getString(R.string.common_service_rating));
+                // 不想显示服务评价，可直接在这里修改隐藏
+                holder.tvFloatIcon.setVisibility(visible);
+                holder.tvFloatLayer.setVisibility(visible);
+                return;
+            }
+            if (presetId != null &&  presetId.equals("endHumanService")) {
+                int visible = data.isVisible() && TUICustomerServiceConfig.getInstance().getShowEndHumanService()? View.VISIBLE:View.GONE;
+                holder.tvFloatLayer.setText(rootView.getContext().getString(R.string.common_service_end));
+                data.setContent(rootView.getContext().getString(R.string.common_service_end));
+                // 不想显示结束服务，可直接在这里修改隐藏
+                holder.tvFloatIcon.setVisibility(visible);
+                holder.tvFloatLayer.setVisibility(visible);
+                return;
             }
         }
 

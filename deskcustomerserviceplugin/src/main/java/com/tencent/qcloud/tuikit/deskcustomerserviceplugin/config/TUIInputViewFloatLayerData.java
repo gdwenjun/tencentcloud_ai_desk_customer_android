@@ -5,6 +5,7 @@ import com.tencent.qcloud.tuikit.deskcustomerserviceplugin.classicui.widget.Inpu
 public class TUIInputViewFloatLayerData {
     private String content;
     private int iconResourceId = -1;
+    private String presetId = "";
     private InputViewFloatLayerProxy.OnItemClickListener OnItemClickListener;
     private boolean isDefault = false;
 
@@ -22,6 +23,13 @@ public class TUIInputViewFloatLayerData {
         return isDefault;
     }
 
+    public String getPresetId() {
+        return presetId;
+    }
+
+    public void setPresetId(String id) {
+        this.presetId = id;
+    }
     public void setDefault(boolean aDefault) {
         isDefault = aDefault;
     }
