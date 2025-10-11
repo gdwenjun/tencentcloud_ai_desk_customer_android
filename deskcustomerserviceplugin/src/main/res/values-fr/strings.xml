@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="suggest">Suggérer</string>
+    <string name="session_end">Session terminée</string>
+    <string name="session_timeout">Session expirée</string>
+    <string name="invite_to_evaluation">Merci d\'avoir utilisé notre service. Veuillez évaluer ce service.</string>
+    <string name="submit_the_evaluation">Envoyer l\'évaluation</string>
+    <string name="satisfaction_evaluation">Évaluation de satisfaction</string>
+    <string name="extension_satisfaction_evaluation">Évaluation de satisfaction</string>
+    <string name="customer_service">Service client</string>
+    <string name="send_product_info">Envoyer les informations produit</string>
+    <string name="product_card_input_info">Veuillez renseigner les informations produit</string>
+    <string name="product_card_close">Fermer</string>
+    <string name="product_card_name">Nom</string>
+    <string name="product_card_description">Description</string>
+    <string name="product_card_picture_url">Lien de l\'image</string>
+    <string name="product_card_jump_url">Lien de redirection</string>
+    <string name="product_card_confirm">Confirmer</string>
+    <string name="product_info_input_empty">Ce champ ne peut pas être vide</string>
+    <string name="common_phrases">Expressions courantes</string>
+    <string name="common_human_service">Service humain</string>
+    <string name="customer_service_unsupport_tips">Le service client est une fonctionnalité premium actuellement en phase de test. Rejoignez le [Groupe IM Tencent Cloud] pour demander l\'activation et l\'essai.</string>
+    <string name="customer_service_buying_guidelines">Groupe IM Tencent Cloud</string>
+    <string name="customer_service_i_know">Compris</string>
+
+    <string name="refresh_questions">Actualiser</string>
+    <string name="chat_bot">Assistant virtuel</string>
+
+    <string name="chat_bot_unsupport_tips">L\'assistant virtuel est une fonctionnalité premium actuellement en phase de test. Rejoignez le [Groupe IM Tencent Cloud] pour demander l\'activation et l\'essai.</string>
+    <string name="chat_bot_buying_guidelines">Groupe IM Tencent Cloud</string>
+
+    <string name="tasks_collection_submit">Remplir</string>
+    <string name="tasks_collection_view">Consulter</string>
+    <string name="must_label"> * </string>
+    <string name="collection_item_input_empty">Ce champ est obligatoire</string>
+    <string name="collection_submit_text">Envoyer</string>
+
+    <string-array name="common_phrases_list">
+        <item>Est-ce disponible en stock ?</item>
+        <item>Pouvez-vous faire une remise ?</item>
+        <item>Y a-t-il des cadeaux ?</item>
+        <item>Quand sera-t-il expédié ?</item>
+        <item>Quel transporteur utilisez-vous ?</item>
+        <item>Quand sera-t-il livré ?</item>
+    </string-array>
+</resources>

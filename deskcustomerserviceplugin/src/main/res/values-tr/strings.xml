@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="suggest">Öner</string>
+    <string name="session_end">Oturum Sonlandı</string>
+    <string name="session_timeout">Oturum Zaman Aşımı</string>
+    <string name="invite_to_evaluation">Hizmetimizi kullandığınız için teşekkür ederiz. Lütfen bu hizmeti değerlendirin.</string>
+    <string name="submit_the_evaluation">Değerlendirmeyi gönder</string>
+    <string name="satisfaction_evaluation">Memnuniyet Değerlendirmesi</string>
+    <string name="extension_satisfaction_evaluation">Memnuniyet Değerlendirmesi</string>
+    <string name="customer_service">Müşteri Hizmetleri</string>
+    <string name="send_product_info">Ürün Bilgisi Gönder</string>
+    <string name="product_card_input_info">Lütfen ürün bilgilerini doldurun</string>
+    <string name="product_card_close">Kapat</string>
+    <string name="product_card_name">Ad</string>
+    <string name="product_card_description">Açıklama</string>
+    <string name="product_card_picture_url">Resim Bağlantısı</string>
+    <string name="product_card_jump_url">Yönlendirme Bağlantısı</string>
+    <string name="product_card_confirm">Onayla</string>
+    <string name="product_info_input_empty">Bu alan boş bırakılamaz</string>
+    <string name="common_phrases">Sık Kullanılan İfadeler</string>
+    <string name="common_human_service">İnsan Desteği</string>
+    <string name="customer_service_unsupport_tips">Musteri Hizmetleri, su anda beta asamasinda olan ucretli bir ozelliktir. Aktivasyon ve deneme icin [Tencent Cloud Anlik Mesajlasma IM Grubu] na katilin.</string>
+    <string name="customer_service_buying_guidelines">Tencent Cloud Anlık Mesajlaşma IM Grubu</string>
+    <string name="customer_service_i_know">Anladım</string>
+
+    <string name="refresh_questions">Yenile</string>
+    <string name="chat_bot">Sohbet Robotu</string>
+
+    <string name="chat_bot_unsupport_tips">Sohbet Robotu, su anda beta asamasinda olan ucretli bir ozelliktir. Aktivasyon ve deneme icin [Tencent Cloud Anlik Mesajlasma IM Grubu] na katilin.</string>
+    <string name="chat_bot_buying_guidelines">Tencent Cloud Anlık Mesajlaşma IM Grubu</string>
+
+    <string name="tasks_collection_submit">Doldur</string>
+    <string name="tasks_collection_view">Görüntüle</string>
+    <string name="must_label"> * </string>
+    <string name="collection_item_input_empty">Bu alan zorunludur</string>
+    <string name="collection_submit_text">Gönder</string>
+
+    <string-array name="common_phrases_list">
+        <item>Stokta mevcut mu?</item>
+        <item>İndirim yapabilir misiniz?</item>
+        <item>Hediye var mı?</item>
+        <item>Ne zaman kargoya verilir?</item>
+        <item>Hangi kargo şirketi?</item>
+        <item>Ne zaman teslim edilir?</item>
+    </string-array>
+</resources>

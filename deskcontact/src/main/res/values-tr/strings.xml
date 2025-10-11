@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="new_friend">Yeni Kişiler</string>
+    <string name="group">Grup Sohbetleri</string>
+    <string name="blacklist">Engellenenler Listesi</string>
+    <string name="contact_count">%d kişi</string>
+    <string name="contact_title">Kişiler</string>
+    <string name="contact_add_friend_remark">Not</string>
+    <string name="no_friend_apply">Kişi isteği yok</string>
+    <string name="at_all">Tümü</string>
+
+    <string name="success">Başarılı</string>
+    <string name="contact_add_failed">Başarısız</string>
+    <string name="contact_add_success">Başarılı</string>
+    <string name="have_be_friend">İkiniz zaten birbirinizin kişisisiniz</string>
+    <string name="friend_limit">Kişi sayınız sınırı aşıyor.</string>
+    <string name="other_friend_limit">Diğer kullanıcının kişi sayısı sınırı aşıyor.</string>
+    <string name="in_blacklist">Bu kullanıcıyı engellediniz.</string>
+    <string name="forbid_add_friend">Bu kullanıcı kişi isteğini devre dışı bıraktı.</string>
+    <string name="set_in_blacklist">Engellendiniz.</string>
+    <string name="wait_agree_friend">İstek gönderildi</string>
+    <string name="send_request">İstek gönderildi</string>
+    <string name="contact_add_more_info">Bilgi</string>
+    <string name="contact_add_more_send_request_text">Gönder</string>
+
+    <string name="add_group_permission_deny">Katılmaktan Yasaklandı</string>
+    <string name="add_group_allready_member">Kullanıcı grup üyesi</string>
+    <string name="add_group_not_found">Grup mevcut değil</string>
+    <string name="add_group_full_member">Grup üye sayısı sınıra ulaştı</string>
+    <string name="contact_search">Ara</string>
+
+    <string name="request_agree">Kabul Et</string>
+    <string name="request_accepted">Kabul Edildi</string>
+    <string name="request_waiting">Beklemede</string>
+    <string name="profile_detail">Detaylar</string>
+    <string name="profile_remark_edit">Takma Ad Düzenle</string>
+    <string name="contact_friend_remark">Takma Ad Ayarla</string>
+    <string name="contact_friend_group">Grup</string>
+    <string name="contact_set_add_wording">Doğrulama Mesajı</string>
+    <string name="contact_add_wording">Doğrulama Mesajı：</string>
+    <string name="contact_add_friend_default_validation">Ben %s</string>
+    <string name="contact_set_remark_and_group">Not</string>
+    <string name="contact_profile_title_edit">Düzenle</string>
+
+    <string name="profile_id">Hesap</string>
+    <string name="profile_add_wording">Doğrulama Mesajı</string>
+    <string name="profile_remark">Takma Ad</string>
+    <string name="profile_black">Engelle</string>
+    <string name="profile_chat">Mesaj Gönder</string>
+    <string name="profile_delete_friend">Kişiyi Sil</string>
+    <string name="profile_voice_chat">Sesli Arama</string>
+    <string name="profile_video_chat">Görüntülü Arama</string>
+    <string name="profile_clear_message">Sohbet Geçmişini Temizle</string>
+    <string name="profile_chat_background">Sohbet arka planı</string>
+    <string name="chat_background_title">Arka Plan</string>
+    <string name="contact_signature_tag">Durum : </string>
+    <string name="contact_no_status">Durum yok</string>
+    <string name="contact_account_tag">ID : </string>
+    <string name="contact_group_type_tag">Grup Türü : </string>
+    <string name="contact_my_friend">Kişilerim</string>
+
+    <string name="contact_profile_message">`Mesaj`</string>
+    <string name="contact_profile_audio_call">Ses</string>
+    <string name="contact_profile_video_call">Video</string>
+
+    <string name="select_chat">Sohbet Kullanıcısı Seç</string>
+
+    <string name="chat_to_top">Sabitle</string>
+
+    <string name="clear_msg_tip">Sohbet geçmişini temizlemek istediğinizden emin misiniz?</string>
+    <string name="contact_delete_friend_tip">Kişiyi silmek istediğinizden emin misiniz?</string>
+
+    <string name="tips_empty_group_member">Üye seçin</string>
+    <string name="tips_empty_group_type">Gruba katılma yöntemi seçin</string>
+
+    <string name="accept">Kabul Et</string>
+    <string name="refuse">Reddet</string>
+    <string name="accepted">Kabul Edildi</string>
+    <string name="refused">Reddedildi</string>
+
+    <string name="add_friend">Kişi Ekle</string>
+    <string name="add_group">Grup Ekle</string>
+    <string name="start_conversation">Yeni Sohbet</string>
+    <string name="create_group_chat">Grup Sohbeti Oluştur</string>
+    <string name="create_chat_room">Sohbet Odası Oluştur</string>
+    <string name="create_community">Topluluk Oluştur</string>
+    <string name="create_private_group">Tartışma Grubu Oluştur</string>
+    <string name="hint_add_user_id">ID Girin</string>
+    <string name="hint_search_user_id">Kullanıcı ID\'si ile ara</string>
+    <string name="hint_search_group_id">Grup ID\'si ile ara</string>
+    <string name="hint_add_wording">Doğrulama mesajı girin</string>
+    <string name="contact_add">Ekle</string>
+    <string name="user_id">ID</string>
+    <string name="add_wording">Doğrulama Mesajı</string>
+    <string name="create_group">Grup Oluştur</string>
+    <string name="contact_create">Oluştur</string>
+    <string name="contact_next_step">İleri</string>
+
+    <string name="modify_group_name">Grup Adını Düzenle</string>
+    <string name="add_group_member">Üye Ekle</string>
+    <string name="group_join_type">Grup Katılma Yöntemi</string>
+    <string name="forbid_join">Katılmaktan Yasaklandı</string>
+    <string name="manager_judge">Yönetici Onayı</string>
+    <string name="auto_judge">Otomatik Onay</string>
+    <string name="input_tip">Takma ad yok. Tekrar girin.</string>
+    <string name="profile_msgrev_opt">Bildirimleri Sessize Al</string>
+    <string name="contact_modify_remark_rule">Sadece harfler, rakamlar, alt çizgiler ve Çince karakterler.</string>
+
+    <string name="contact_over_limit_tip">En fazla %d seçilebilir.</string>
+
+    <string name="contact_no_such_group">Bu grup sohbeti mevcut değil.</string>
+    <string name="contact_no_such_user">Bu kullanıcı mevcut değil.</string>
+
+    <string name="contact_my_user_id">Kullanıcı ID\'m : %s</string>
+
+    <string name="contact_community">Topluluk</string>
+    <string name="contact_i_know">Anladım</string>
+    <string name="contact_no_more_reminders">Daha fazla hatırlatma yok</string>
+    <string name="contact_im_flagship">Premium Sürüm</string>
+    <string name="contact_buying_guidelines">fiyat açıklaması</string>
+    <string name="contact_im_flagship_edition_update_tip">%s işlevi IM Premium Sürüm işlevidir, Premium Sürüm paketi satın aldıktan sonra kullanılabilir. Detaylar için fiyat açıklamasına bakın.</string>
+
+    <string name="contact_no_new_friend_application">Arkadaş isteği boş</string>
+    <string name="contact_no_group">Grup sohbetleri boş</string>
+    <string name="contact_no_block_list">Engelleme listesi boş</string>
+    <string name="contact_selected_group_member">Katılımcılar</string>
+
+    <string name="group_choose_avatar">Avatar Seç</string>
+    <string name="group_avatar_text">Grup Avatarı</string>
+    <string name="group_name_text">Grup Adı</string>
+    <string name="modify_group_id">Grup ID\'sini Düzenle</string>
+    <string name="group_id_option">Grup ID (isteğe bağlı)</string>
+    <string name="group_type_text">Grup Türü</string>
+    <string name="group_created">Oluştur</string>
+    <string name="group_type_select_text">Grup türü seçin</string>
+    <string name="group_work_type">Arkadaşlar Çalışma grubu(İş)</string>
+    <string name="group_work_content">Arkadaşlar çalışma grubu (İş): Normal WeChat gruplarına benzer, oluşturulduktan sonra sadece grupta zaten bulunan arkadaşlar gruba davet edilebilir ve davet edilenin veya grup sahibinin onayına gerek yoktur.</string>
+    <string name="group_public_type">Yabancı Sosyal grup(Kamu）</string>
+    <string name="group_public_des">Yabancı sosyal grup (Kamu): QQ grubuna benzer, grup sahibi oluşturduktan sonra grup yöneticisini belirleyebilir. Kullanıcı grup ID\'sini arayıp grup başvurusu yaptıktan sonra, grup sahibi veya yönetici katılmadan önce onaylamalıdır.</string>
+    <string name="group_meeting_type">Geçici Toplantı grubu(Toplantı）</string>
+    <string name="group_meeting_des">Geçici toplantı grubu (Toplantı): Oluşturulduktan sonra istediğiniz zaman girip çıkabilirsiniz ve gruba katılmadan önceki mesajları görüntülemeyi destekler; gerçek zamanlı ses ve video ürünleriyle birleştirilen ses ve video konferans senaryoları, çevrimiçi eğitim senaryoları ve diğer senaryolar için uygundur.</string>
+    <string name="group_commnity_type">Topluluk(Topluluk)</string>
+    <string name="group_commnity_des">Topluluk(Topluluk)：Oluşturulduktan sonra istediğiniz zaman girip çıkabilirsiniz, 100.000 kişiye kadar destekler, geçmiş mesaj depolamayı destekler ve kullanıcılar grup ID\'sini arayıp grup başvurusu yaptıktan sonra yönetici onayı olmadan gruba katılabilirler.</string>
+    <string name="group_name_edit_null_tips">Grup adı boş olamaz!</string>
+    <string name="group_name_edit_exceed_tips">Grup adı en fazla 30 byte!</string>
+    <string name="group_id_edit_format_tips">Grup ID öneki @TGS# olamaz!</string>
+    <string name="community_id_edit_format_tips">Topluluk ID öneki @TGS#_ olmalı!</string>
+    <string name="group_id_edit_exceed_tips">Grup ID en fazla 48 byte!</string>
+    <string name="group_type_content_title">Detaylı ürün dokümantasyonuna bakın</string>
+    <string name="group_type_content_url">ürün dokümantasyonu</string>
+    <string name="group_type_content_button">Ürün dokümantasyonunu görüntüle</string>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="open_file_tips">Sélectionnez une application pour ouvrir le fichier</string>
+    <string name="date_year_short">a</string>
+    <string name="date_month_short">m</string>
+    <string name="date_day_short">j</string>
+    <string name="date_hour_short">h</string>
+    <string name="date_minute_short">min</string>
+    <string name="date_second_short">s</string>
+    <string name="date_yesterday">Hier</string>
+    <string name="chat_time_today">Aujourd\'hui</string>
+
+    <string name="setting">Paramètres</string>
+    <string name="setting_fail">Configuration échouée !</string>
+    <string name="setting_success">Configuration réussie !</string>
+    <string name="default_text">Par défaut</string>
+    <string name="core_next_step">Suivant</string>
+
+    <string name="revoke_tips_you">Vous avez supprimé un message.</string>
+    <string name="revoke_tips">a supprimé un message.</string>
+    <string name="revoke_tips_other">Un message a été supprimé.</string>
+    <string name="common_risk_msg_revoked_tips">Le message contenant du contenu inapproprié a été supprimé.</string>
+    <string name="chat_reply_num">%d réponse(s)</string>
+    <string name="has_read">Lu</string>
+    <string name="unread">Non lu</string>
+    <string name="has_all_read">Tout lu</string>
+    <string name="someone_has_read">%d personne(s) a lu</string>
+
+    <string name="timcommon_no_support_msg">Message personnalisé non pris en charge</string>
+    <string name="translation_support">Traduit par Tencent Cloud Chat</string>
+    <string name="ai_generated_tip">Contenu généré par Intelligence Artificielle</string>
+
+</resources>

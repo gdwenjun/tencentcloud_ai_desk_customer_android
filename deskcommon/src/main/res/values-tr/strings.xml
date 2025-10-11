@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="open_file_tips">Dosyayı açmak için bir uygulama seçin</string>
+    <string name="date_year_short">y</string>
+    <string name="date_month_short">a</string>
+    <string name="date_day_short">g</string>
+    <string name="date_hour_short">s</string>
+    <string name="date_minute_short">dk</string>
+    <string name="date_second_short">sn</string>
+    <string name="date_yesterday">Dün</string>
+    <string name="chat_time_today">Bugün</string>
+
+    <string name="setting">Ayarlar</string>
+    <string name="setting_fail">Kurulum başarısız!</string>
+    <string name="setting_success">Kurulum başarılı!</string>
+    <string name="default_text">Varsayılan</string>
+    <string name="core_next_step">İleri</string>
+
+    <string name="revoke_tips_you">Bir mesajı geri aldınız.</string>
+    <string name="revoke_tips">bir mesajı geri aldı.</string>
+    <string name="revoke_tips_other">Bir mesaj geri alındı.</string>
+    <string name="common_risk_msg_revoked_tips">İhlal içeren mesaj geri alındı.</string>
+    <string name="chat_reply_num">%d yanıt</string>
+    <string name="has_read">Okundu</string>
+    <string name="unread">Okunmadı</string>
+    <string name="has_all_read">Tümü okundu</string>
+    <string name="someone_has_read">%d kişi okudu</string>
+
+    <string name="timcommon_no_support_msg">Desteklenmeyen özel mesaj</string>
+    <string name="translation_support">Tencent Cloud Chat tarafından çevrilmiştir</string>
+    <string name="ai_generated_tip">Yapay Zeka Tarafından Oluşturulan İçerik</string>
+
+</resources>

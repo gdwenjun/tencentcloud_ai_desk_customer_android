@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pic">Albüm</string>
+    <string name="photo">Fotoğraf Çek</string>
+    <string name="video">Video Kaydet</string>
+    <string name="file">Dosya</string>
+
+    <string name="release_end">Göndermek için bırakın</string>
+    <string name="hold_say">Konuşmak için basılı tutun</string>
+
+    <string name="copy_action">Kopyala</string>
+    <string name="translate_action">Çevir</string>
+    <string name="delete_action">Sil</string>
+    <string name="revoke_action">Geri Çek</string>
+    <string name="resend_action">Tekrar Gönder</string>
+    <string name="hide_action">Gizle</string>
+    <string name="chat_speaker_mode_on_action">Hoparlörü Aç</string>
+    <string name="chat_speaker_mode_off_action">Kulaklıkta Çal</string>
+
+    <string name="chat_speaker_mode_on_tip">Hoparlör Modu Açık</string>
+    <string name="chat_speaker_mode_off_tip">Hoparlör Modu Kapalı</string>
+    <string name="copy_success_tip">Kopyalama Başarılı</string>
+
+    <string name="chat_message_detail">Mesaj detayları</string>
+
+    <string name="titlebar_back">Geri</string>
+    <string name="forward_tip">lütfen mesaj seçin!</string>
+    <string name="forward_mode_onebyone">Tek tek ilet</string>
+    <string name="forward_mode_merge">Birleştir ve ilet</string>
+    <string name="forward_button">İlet</string>
+    <string name="reply_button">Yanıtla</string>
+    <string name="quote_button">Alıntıla</string>
+    <string name="info_button">Bilgi</string>
+    <string name="delete_button">Sil</string>
+    <string name="chat_delete_msg_tip">Şimdi sil</string>
+
+    <string name="forward_chats">Grup Sohbet Geçmişi</string>
+    <string name="and_text">ve</string>
+    <string name="forward_chats_c2c">Sohbet Geçmişi</string>
+    <string name="forward_compatible_text">Birleştir ve İlet mevcut değil. Önce en son sürüme yükseltin.</string>
+    <string name="forward_chat_record">Sohbet Kaydı</string>
+
+    <string name="forward_failed_tip">Başarısız mesajlar iletilemez.</string>
+    <string name="forward_group_note_or_poll_failed_tip">Grup notu veya anket mesajları iletilemez.</string>
+    <string name="forward_oneByOne_limit_number_tip">Çok fazla mesaj olduğu için mesajlar tek tek iletilemez.</string>
+
+    <string name="and_and"> </string>
+    <string name="be_friend">artık kişiniz.</string>
+
+    <string name="join_group_tip">Gruba davet edildiniz: </string>
+    <string name="joined_tip">Gruba katıldınız: </string>
+    <string name="reject_join_tip">Gruba katılmaktan reddedildiniz: </string>
+    <string name="kick_group">Gruptan çıkarıldınız: </string>
+
+    <string name="send_two_mins">Mesaj 2 dakikadan fazla önce gönderildi</string>
+    <string name="revoke_fail">Geri çekme başarısız</string>
+
+    <string name="wait_tip">lütfen daha sonra tekrar deneyin</string>
+    <string name="group_apply_tips">%1$d grup katılma isteği</string>
+
+    <string name="dismiss_tip_before">Grubunuz</string>
+    <string name="dismiss_tip_after">dağıtıldı.</string>
+    <string name="get_system_notice">Özel sistem bildirimi alındı: </string>
+
+    <string name="down_cancle_send">İptal etmek için yukarı kaydırın</string>
+    <string name="say_time_short">Mesaj çok kısa</string>
+    <string name="record_fail">Kayıt başarısız</string>
+    <string name="up_cancle_send">İptal etmek için bırakın</string>
+
+    <string name="send">Gönder</string>
+
+    <string name="custom_msg">[Özel Mesajlar]</string>
+    <string name="custom_emoji">[Animasyonlu Çıkartma]</string>
+    <string name="picture_extra">[Resim]</string>
+    <string name="video_extra">[Video]</string>
+    <string name="audio_extra">[Ses]</string>
+    <string name="file_extra">[Dosya]</string>
+    <string name="location_extra">[Konum]</string>
+
+    <string name="locate_origin_msg_failed_tip">Orijinal mesaj bulunamadı.</string>
+
+    <string name="forward_extra">[Sohbet Kaydı]</string>
+    <string name="revoke_tips_you">Bir mesajı geri çektiniz.</string>
+    <string name="revoke_tips">bir mesajı geri çekti.</string>
+    <string name="revoke_tips_other">Bir mesaj geri çekildi.</string>
+
+    <string name="create_group">Grup Oluştur</string>
+    <string name="create_community">Topluluk Oluştur</string>
+    <string name="etc">, vb.</string>
+    <string name="join_group">%s gruba katıldı</string>
+    <string name="invite_joined_group">%1$s, %2$s\'yi gruba davet etti</string>
+    <string name="quit_group">%s gruptan ayrıldı</string>
+    <string name="kick_group_tip">%1$s, %2$s\'yi gruptan çıkardı</string>
+    <string name="be_group_manager">%s grup yöneticisi yapıldı</string>
+    <string name="cancle_group_manager">%s grup yöneticiliğinden alındı</string>
+    <string name="modify_group_name_is">%1$s grup adını %2$s olarak değiştirdi</string>
+    <string name="modify_notice">%1$s grup duyurusunu %2$s olarak değiştirdi</string>
+    <string name="modify_introduction">%1$s grup tanıtımını %2$s olarak değiştirdi</string>
+    <string name="modify_shut_up_all">%s tüm üyeleri susturdu</string>
+    <string name="modify_cancel_shut_up_all">%s tüm üyelerin susturmasını kaldırdı</string>
+    <string name="move_owner">%1$s grup sahipliğini %2$s\'ye devretti</string>
+    <string name="modify_group_avatar">%s grup avatarını değiştirdi</string>
+    <string name="banned">%1$s %2$s süreyle susturuldu</string>
+    <string name="cancle_banned">%s\'nin susturması kaldırıldı</string>
+    <string name="modify_group_add_opt">%1$s grup katılma ayarını %2$s olarak değiştirdi</string>
+    <string name="modify_group_invite_opt">%1$s grup davet ayarını %2$s olarak değiştirdi</string>
+    <string name="group_add_opt_auto_approval">Otomatik Onay</string>
+    <string name="group_add_opt_admin_approve">Yönetici Onayı</string>
+    <string name="group_add_opt_join_disable">Katılmaktan Yasaklandı</string>
+    <string name="group_add_opt_invite_disable">Davet Etmekten Yasaklandı</string>
+
+    <string name="modify_topic_name_is">%1$s konu adını %2$s olarak değiştirdi</string>
+    <string name="modify_topic_notice">%1$s konu duyurusunu %2$s olarak değiştirdi</string>
+    <string name="modify_topic_introduction">%1$s grup tanıtımını %2$s olarak değiştirdi</string>
+    <string name="modify_topic_avatar">%s grup avatarını değiştirdi</string>
+
+    <string name="typing">Yazıyor...</string>
+    <string name="titlebar_mutiselect">Seç</string>
+    <string name="audio_permission_error">Ses izni gerekli</string>
+    <string name="record_occupied">kayıt meşgul</string>
+    <string name="record_null">kayıt boş</string>
+    <string name="record_limit_tips">Maksimum ses uzunluğuna ulaşıldı</string>
+    <string name="record_rejected_for_in_call">Ses ve video araması devam ediyor, lütfen daha sonra tekrar deneyin</string>
+    <string name="record_rejected_for_in_recording">Mevcut kayıt henüz bitmedi</string>
+    <string name="play_error_tip">Ses dosyası bozuk veya mevcut değil</string>
+    <string name="input_tip">Takma ad yok. Tekrar girin.</string>
+    <string name="chat_camera_occupied_tip">Diğer işlevler kamerayı kullanıyor.</string>
+    <string name="chat_mic_is_being_used_cant_record">Mikrofon başka bir işlev tarafından kullanılıyor, kayıt yapılamıyor.</string>
+    <string name="chat_record_audio_failed">Ses kaydı başarısız.</string>
+
+    <string name="delivered">Teslim edildi</string>
+    <string name="someone_unread">%d okunmadı</string>
+    <string name="someone_have_read">%d okundu</string>
+
+    <string name="un_download">İndirilmedi</string>
+    <string name="downloaded">İndirildi</string>
+    <string name="downloading">İndiriliyor...</string>
+    <string name="send_failed">Gönderim Başarısız</string>
+    <string name="send_failed_file_not_exists">Gönderim başarısız, dosya mevcut değil</string>
+    <string name="sended">Gönderildi</string>
+    <string name="sending">Gönderiliyor...</string>
+    <string name="open_file_tips">Dosyayı açmak için bir uygulama seçin</string>
+    <string name="download_file_error">Video indirme başarısız: </string>
+    <string name="voice_play_tip">Ses dosyası indirilmedi.</string>
+
+    <string name="device_info">cihaz bilgisi:</string>
+    <string name="system_version">\n sistem sürümü:</string>
+    <string name="sdk_version">\n SDK sürümü:</string>
+
+    <string name="permission_content">Bu özelliği kullanmak için izin vermeniz gerekir. İlgili izni devre dışı bıraktığınız için, lütfen izni manuel olarak etkinleştirin.</string>
+    <string name="setting">Ayarlar</string>
+
+    <string name="no_event_cancle_tip">tarayıcıda iptal olayı yok</string>
+    <string name="no_event_confirm_tip">tarayıcıda onay olayı yok</string>
+
+    <string name="record_time_tip">Kayıt süresi çok kısa.</string>
+    <string name="tap_tips">fotoğraf için dokunun, kayıt için basılı tutun</string>
+    <string name="tap_capture">fotoğraf çekmek için dokunun</string>
+    <string name="tap_video">video kaydetmek için basılı tutun</string>
+
+    <string name="completed">tamamlandı</string>
+    <string name="view_original_image">Tam Resmi Görüntüle</string>
+
+    <string name="at_all">Tümü</string>
+    <string name="ui_at_all">[@Tümü]</string>
+    <string name="ui_at_me">[Birisi beni @ etti]</string>
+    <string name="ui_at_all_me">[@Tümü][Birisi beni @ etti]</string>
+    <string name="drafts">[Taslaklar]</string>
+
+    <string name="group_apply_click_handle">İşlemek için dokunun</string>
+    <string name="no_support_msg">Desteklenmeyen özel mesajlar</string>
+
+    <string name="live">\'nin canlı yayını</string>
+    <string name="live_group_live_streaming">Canlı Yayın</string>
+    <string name="live_group_live_end">Canlı Yayın Bitti</string>
+    <string name="live_group_user_live">%s Canlı</string>
+    <string name="live_group_live">Canlı Grup</string>
+
+    <string name="start_group_call">Grup Araması Başlat</string>
+    <string name="start_call">Arama Başlat</string>
+    <string name="cancle_group_call">Grup Aramasını İptal Et</string>
+    <string name="cancle_call">Aramayı İptal Et</string>
+    <string name="other_line_busy">Hat meşgul</string>
+    <string name="reject_group_calls">Grup Aramasını Reddet</string>
+    <string name="no_response_call">Cevap yok</string>
+    <string name="accept_call">Cevaplandı</string>
+    <string name="line_busy">Hat meşgul</string>
+    <string name="reject_call">reddet</string>
+    <string name="invalid_command">geçersiz komut</string>
+    <string name="stop_group_call">Grup Aramasını Sonlandır</string>
+    <string name="stop_call_tip">Süre:</string>
+    <string name="reject_calls">Aramayı Reddet</string>
+    <string name="chat_calling_switch_to_audio">Sesli aramaya geç</string>
+    <string name="chat_calling_switch_to_audio_accept">Video\'dan sese geçmeyi onayla</string>
+    <string name="chat_calling_unknown_invitation">Bilinmeyen davet</string>
+
+    <string name="test_custom_message">Detayları Görüntüle>></string>
+
+    <string name="test_custom_action">Özel</string>
+    <string name="welcome_tip">Tencent Cloud Chat\'e hoş geldiniz!</string>
+
+    <string name="resend_tips">Tekrar göndermek istediğinizden emin misiniz?</string>
+    <string name="delete_tips">Bu mesajı silmek istediğinizden emin misiniz?</string>
+    <string name="reedit_msg">Yeniden düzenle</string>
+    <string name="save_success">Başarıyla kaydedildi</string>
+    <string name="save_failed">Kaydetme başarısız</string>
+    <string name="saving_tips">Kaydediliyor</string>
+
+    <string name="back_to_lastmessage">Son Mesaja Git</string>
+    <string name="back_to_newmessage"> Yeni Mesaj(lar)</string>
+    <string name="back_to_atmessage_all">\@Tümü</string>
+    <string name="back_to_atmessage_me">Birisi beni @ etti</string>
+
+    <string name="chat_permission_mic_reason_title">%s mikrofon erişimi için başvuruyor</string>
+    <string name="chat_permission_mic_reason">Ses mesajları gönderebilmeniz, video ve ses ile video aramaları yapabilmeniz için lütfen mikrofon erişimine izin verin.</string>
+    <string name="chat_permission_camera_reason_title">%s kamera izni için başvuruyor</string>
+    <string name="chat_permission_camera_reason">Kişilere göndermek için fotoğraf veya video çekebilmeniz ve video aramaları yapabilmeniz için lütfen web kamerası erişimine izin verin.</string>
+    <string name="chat_permission_storage_reason_title">%s depolama izni için başvuruyor</string>
+    <string name="chat_permission_storage_reason">Fotoğraf ve videoları cihazınıza kaydedebilmeniz için lütfen fotoğraf ve videoları cihazınıza yazmamıza izin verin.</string>
+    <string name="chat_permission_mic_dialog_alert">Ses mesajları, video kameralar ve ses ile video aramalarını normal şekilde kullanabilmek için Ayarlar->Uygulamalar->%s\'de mikrofon erişimine izin verin</string>
+    <string name="chat_permission_camera_dialog_alert">Fotoğraf, video ve video arama işlevlerini normal şekilde kullanabilmek için Ayarlar->Uygulamalar->%s\'de kamera erişimine izin verin</string>
+    <string name="chat_permission_storage_dialog_alert">Fotoğraf ve videoları kaydetme işlevini normal şekilde kullanabilmek için Ayarlar->Uygulamalar->%s\'de depolama erişimine izin verin</string>
+
+    <string name="chat_message_read_receipt">Mesaj Okundu Makbuzu</string>
+    <string name="chat_i_know">Anladım</string>
+    <string name="chat_no_more_reminders">Daha fazla hatırlatma yok</string>
+    <string name="chat_im_flagship">Premium Sürüm</string>
+    <string name="chat_buying_guidelines">fiyat açıklaması</string>
+    <string name="chat_im_flagship_edition_update_tip">%s özelliği sadece Premium Sürüm için mevcuttur, Premium Sürüm satın aldıktan sonra kullanılabilir. Detaylar için fiyat kılavuzuna bakın.</string>
+
+    <string name="chat_reply_detail">Yanıt detayı</string>
+
+    <string name="chat_not_read">Okunmadı</string>
+
+    <string name="custom_evaluation_message">Bu hizmetin değerlendirmesi</string>
+    
+    <string name="chat_input_edit_hint_text">Mesaj gönder</string>
+    <string name="chat_header_not_desc">Henüz açıklama yok.</string>
+    <string name="chat_tips_not_login">Giriş yapılmadı.</string>
+
+    <string name="chat_user_status_online">çevrimiçi</string>
+    <string name="chat_user_status_offline">çevrimdışı</string>
+    <string name="chat_user_status_unknown">bilinmiyor</string>
+
+    <string name="chat_start_audio_call">Sesli Arama</string>
+    <string name="chat_start_video_call">Video Arama</string>
+
+    <string name="chat_call_reject_caller">Arama kullanıcı tarafından reddedildi</string>
+    <string name="chat_call_reject_callee">Reddedildi</string>
+    <string name="chat_call_cancel_caller">İptal edildi</string>
+    <string name="chat_call_cancel_callee">Arama arayan tarafından iptal edildi</string>
+    <string name="chat_call_timeout_caller">Arama cevaplanmadı</string>
+    <string name="chat_call_timeout_callee">Arama arayan tarafından iptal edildi</string>
+    <string name="chat_call_line_busy_caller">Hat meşgul</string>
+    <string name="chat_call_line_busy_callee">Arama arayan tarafından iptal edildi</string>
+    <string name="chat_group_call_send">grup araması başlattı</string>
+    <string name="chat_group_call_end">Grup aramasını sonlandır</string>
+    <string name="chat_group_call_no_answer">cevap yok</string>
+    <string name="chat_group_call_reject_format">%s tarafından reddedildi</string>
+    <string name="chat_group_call_accept_format">%s tarafından cevaplandı</string>
+    <string name="chat_group_call_switch_to_audio_format">%s tarafından sesli aramaya geçildi</string>
+    <string name="chat_group_call_confirm_switch_to_audio_format">%s tarafından sesli aramaya geçmeyi onayla</string>
+
+    <string name="chat_quick_tap_message_default_action_name">gıdıklandı</string>
+    <string name="chat_quick_tap_message_action_from_me">Ben %1$s "%2$s"</string>
+    <string name="chat_quick_tap_message_action_to_me">"%1$s" %2$s beni</string>
+    <string name="chat_quick_tap_message_action">"%1$s" %2$s "%3$s"</string>
+
+    <string name="chat_risk_image_message_alert">Hassas içerik içeriyor, görüntülenemiyor</string>
+    <string name="chat_risk_sound_message_alert">Hassas içerik içeriyor, dinlenemiyor</string>
+    <string name="chat_risk_send_message_failed_alert">Hassas içerik içeriyor, gönderim başarısız</string>
+    <string name="chat_risk_quote_message_alert">Hassas içerik içeriyor, alıntılama başarısız</string>
+    <string name="chat_risk_reply_message_alert">Hassas içerik içeriyor, yanıtlama başarısız</string>
+    <string name="chat_scan_risk_image_message_alert">Resimde hassas içerik tespit edildi, geçici olarak görüntülenemiyor</string>
+    <string name="chat_scan_risk_video_message_alert">Videoda hassas içerik tespit edildi, geçici olarak görüntülenemiyor</string>
+    <string name="chat_risk_content">[İhlal içeriği]</string>
+    <string name="chat_risk_sound">[İhlal sesi]</string>
+    <string name="chat_risk_image">[İhlal resmi]</string>
+    <string name="chat_risk_video">[İhlal videosu]</string>
+
+    <string name="chat_recent_use">Son Kullanım</string>
+    <string name="chat_all_emojis">Tüm Emojiler</string>
+
+    <string name="chat_group_pin_message">Sabitle</string>
+    <string name="chat_group_unpin_message">Sabitlemeyi Kaldır</string>
+    <string name="chat_group_message_pinned">%s bir mesajı sabitledi</string>
+    <string name="chat_group_message_unpinned">%s sabitlenmiş bir mesajı kaldırdı</string>
+    <string name="chat_unpinned_button_text">Kaldır</string>
+    <string name="chat_message_is_pinned">Mesaj zaten sabitlenmiş.</string>
+    <string name="chat_message_is_unpinned">Bu mesaj zaten sabitlemesi kaldırılmış.</string>
+
+    <string name="chat_quote_origin_message_revoked">Alıntılanan içerik geri çekildi</string>
+    <string name="chat_reply_origin_message_revoked">Yanıtlanan içerik geri çekildi</string>
+
+</resources>

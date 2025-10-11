@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="open_file_tips">Dosyayı açmak için bir uygulama seçin</string>
+
+    <string name="cancel">İptal</string>
+    <string name="sure">Onayla</string>
+    <string name="core_permission_dialog_title">Yetki İsteği</string>
+    <string name="core_permission_dialog_positive_setting_text">Ayarlar</string>
+    <string name="date_yesterday">Dün</string>
+    <string name="date_year_short">YYYY</string>
+    <string name="date_month_short">AA</string>
+    <string name="date_day_short">GG</string>
+    <string name="date_hour_short">SS</string>
+    <string name="date_minute_short">DD</string>
+    <string name="date_second_short">SS</string>
+
+    <string name="core_float_permission_hint">Lütfen hem \"Arka planda çalışırken açılır pencere göster\" hem de \"Açılır Pencere Göster\" izinlerini etkinleştirin</string>
+</resources>

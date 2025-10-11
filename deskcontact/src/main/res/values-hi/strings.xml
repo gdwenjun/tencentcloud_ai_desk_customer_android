@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="new_friend">नए संपर्क</string>
+    <string name="group">ग्रुप चैट</string>
+    <string name="blacklist">ब्लॉक सूची</string>
+    <string name="contact_count">%d संपर्क</string>
+    <string name="contact_title">संपर्क</string>
+    <string name="contact_add_friend_remark">टिप्पणी</string>
+    <string name="no_friend_apply">कोई संपर्क अनुरोध नहीं</string>
+    <string name="at_all">सभी</string>
+
+    <string name="success">सफल</string>
+    <string name="contact_add_failed">असफल</string>
+    <string name="contact_add_success">सफल</string>
+    <string name="have_be_friend">आप दोनों पहले से ही एक-दूसरे के संपर्क हैं</string>
+    <string name="friend_limit">आपके संपर्कों की संख्या सीमा से अधिक है।</string>
+    <string name="other_friend_limit">दूसरे उपयोगकर्ता के संपर्कों की संख्या सीमा से अधिक है।</string>
+    <string name="in_blacklist">आपने इस उपयोगकर्ता को ब्लॉक कर दिया है।</string>
+    <string name="forbid_add_friend">इस उपयोगकर्ता ने संपर्क अनुरोध अक्षम कर दिया है।</string>
+    <string name="set_in_blacklist">आपको ब्लॉक कर दिया गया है।</string>
+    <string name="wait_agree_friend">अनुरोध भेजा गया</string>
+    <string name="send_request">अनुरोध भेजा गया</string>
+    <string name="contact_add_more_info">जानकारी</string>
+    <string name="contact_add_more_send_request_text">भेजें</string>
+
+    <string name="add_group_permission_deny">शामिल होने से प्रतिबंधित</string>
+    <string name="add_group_allready_member">उपयोगकर्ता ग्रुप सदस्य है</string>
+    <string name="add_group_not_found">ग्रुप मौजूद नहीं है</string>
+    <string name="add_group_full_member">ग्रुप सदस्यों की संख्या सीमा तक पहुंच गई है</string>
+    <string name="contact_search">खोजें</string>
+
+    <string name="request_agree">स्वीकार करें</string>
+    <string name="request_accepted">स्वीकार किया गया</string>
+    <string name="request_waiting">लंबित</string>
+    <string name="profile_detail">विवरण</string>
+    <string name="profile_remark_edit">उपनाम संपादित करें</string>
+    <string name="contact_friend_remark">उपनाम सेट करें</string>
+    <string name="contact_friend_group">ग्रुप</string>
+    <string name="contact_set_add_wording">सत्यापन संदेश</string>
+    <string name="contact_add_wording">सत्यापन संदेश：</string>
+    <string name="contact_add_friend_default_validation">मैं %s हूं</string>
+    <string name="contact_set_remark_and_group">टिप्पणी</string>
+    <string name="contact_profile_title_edit">संपादित करें</string>
+
+    <string name="profile_id">खाता</string>
+    <string name="profile_add_wording">सत्यापन संदेश</string>
+    <string name="profile_remark">उपनाम</string>
+    <string name="profile_black">ब्लॉक करें</string>
+    <string name="profile_chat">संदेश भेजें</string>
+    <string name="profile_delete_friend">संपर्क हटाएं</string>
+    <string name="profile_voice_chat">वॉइस कॉल</string>
+    <string name="profile_video_chat">वीडियो कॉल</string>
+    <string name="profile_clear_message">चैट इतिहास साफ़ करें</string>
+    <string name="profile_chat_background">चैट पृष्ठभूमि</string>
+    <string name="chat_background_title">पृष्ठभूमि</string>
+    <string name="contact_signature_tag">स्थिति : </string>
+    <string name="contact_no_status">कोई स्थिति नहीं</string>
+    <string name="contact_account_tag">आईडी : </string>
+    <string name="contact_group_type_tag">ग्रुप प्रकार : </string>
+    <string name="contact_my_friend">मेरे संपर्क</string>
+
+    <string name="contact_profile_message">`संदेश`</string>
+    <string name="contact_profile_audio_call">ऑडियो</string>
+    <string name="contact_profile_video_call">वीडियो</string>
+
+    <string name="select_chat">चैट उपयोगकर्ता चुनें</string>
+
+    <string name="chat_to_top">पिन करें</string>
+
+    <string name="clear_msg_tip">क्या आप वाकई चैट इतिहास साफ़ करना चाहते हैं?</string>
+    <string name="contact_delete_friend_tip">क्या आप वाकई संपर्क हटाना चाहते हैं?</string>
+
+    <string name="tips_empty_group_member">सदस्य चुनें</string>
+    <string name="tips_empty_group_type">ग्रुप में शामिल होने का तरीका चुनें</string>
+
+    <string name="accept">स्वीकार करें</string>
+    <string name="refuse">अस्वीकार करें</string>
+    <string name="accepted">स्वीकार किया गया</string>
+    <string name="refused">अस्वीकार किया गया</string>
+
+    <string name="add_friend">संपर्क जोड़ें</string>
+    <string name="add_group">ग्रुप जोड़ें</string>
+    <string name="start_conversation">नई चैट</string>
+    <string name="create_group_chat">ग्रुप चैट बनाएं</string>
+    <string name="create_chat_room">चैट रूम बनाएं</string>
+    <string name="create_community">कम्युनिटी बनाएं</string>
+    <string name="create_private_group">चर्चा ग्रुप बनाएं</string>
+    <string name="hint_add_user_id">आईडी दर्ज करें</string>
+    <string name="hint_search_user_id">उपयोगकर्ता आईडी से खोजें</string>
+    <string name="hint_search_group_id">ग्रुप आईडी से खोजें</string>
+    <string name="hint_add_wording">सत्यापन संदेश दर्ज करें</string>
+    <string name="contact_add">जोड़ें</string>
+    <string name="user_id">आईडी</string>
+    <string name="add_wording">सत्यापन संदेश</string>
+    <string name="create_group">ग्रुप बनाएं</string>
+    <string name="contact_create">बनाएं</string>
+    <string name="contact_next_step">अगला</string>
+
+    <string name="modify_group_name">ग्रुप नाम संपादित करें</string>
+    <string name="add_group_member">सदस्य जोड़ें</string>
+    <string name="group_join_type">ग्रुप शामिल होने का तरीका</string>
+    <string name="forbid_join">शामिल होने से प्रतिबंधित</string>
+    <string name="manager_judge">एडमिन अनुमोदन</string>
+    <string name="auto_judge">स्वचालित अनुमोदन</string>
+    <string name="input_tip">कोई उपनाम नहीं। फिर से दर्ज करें।</string>
+    <string name="profile_msgrev_opt">सूचनाएं म्यूट करें</string>
+    <string name="contact_modify_remark_rule">केवल अक्षर, अंक, अंडरस्कोर और चीनी वर्ण।</string>
+
+    <string name="contact_over_limit_tip">अधिकतम %d चुने जा सकते हैं।</string>
+
+    <string name="contact_no_such_group">यह ग्रुप चैट मौजूद नहीं है।</string>
+    <string name="contact_no_such_user">यह उपयोगकर्ता मौजूद नहीं है।</string>
+
+    <string name="contact_my_user_id">मेरा उपयोगकर्ता आईडी : %s</string>
+
+    <string name="contact_community">कम्युनिटी</string>
+    <string name="contact_i_know">मैं समझ गया</string>
+    <string name="contact_no_more_reminders">और कोई अनुस्मारक नहीं</string>
+    <string name="contact_im_flagship">प्रीमियम संस्करण</string>
+    <string name="contact_buying_guidelines">मूल्य विवरण</string>
+    <string name="contact_im_flagship_edition_update_tip">%s फ़ंक्शन IM प्रीमियम संस्करण फ़ंक्शन है, जिसका उपयोग प्रीमियम संस्करण पैकेज खरीदने के बाद किया जा सकता है। विवरण के लिए मूल्य विवरण देखें।</string>
+
+    <string name="contact_no_new_friend_application">मित्र अनुरोध खाली है</string>
+    <string name="contact_no_group">ग्रुप चैट खाली है</string>
+    <string name="contact_no_block_list">ब्लॉक सूची खाली है</string>
+    <string name="contact_selected_group_member">प्रतिभागी</string>
+
+    <string name="group_choose_avatar">अवतार चुनें</string>
+    <string name="group_avatar_text">ग्रुप अवतार</string>
+    <string name="group_name_text">ग्रुप नाम</string>
+    <string name="modify_group_id">ग्रुप आईडी संपादित करें</string>
+    <string name="group_id_option">ग्रुप आईडी (वैकल्पिक)</string>
+    <string name="group_type_text">ग्रुप प्रकार</string>
+    <string name="group_created">बनाएं</string>
+    <string name="group_type_select_text">ग्रुप प्रकार चुनें</string>
+    <string name="group_work_type">मित्र कार्य समूह (कार्य)</string>
+    <string name="group_work_content">मित्र कार्य समूह (कार्य): सामान्य WeChat समूहों के समान, निर्माण के बाद, केवल समूह में पहले से मौजूद मित्रों को समूह में आमंत्रित किया जा सकता है, और आमंत्रित व्यक्ति या समूह मालिक की अनुमति की आवश्यकता नहीं है।</string>
+    <string name="group_public_type">अजनबी सामाजिक समूह (सार्वजनिक)</string>
+    <string name="group_public_des">अजनबी सामाजिक समूह (सार्वजनिक): QQ समूह के समान, समूह मालिक निर्माण के बाद समूह प्रशासक नामित कर सकता है। उपयोगकर्ता द्वारा समूह आईडी खोजने और समूह आवेदन शुरू करने के बाद, समूह मालिक या प्रशासक को समूह में शामिल होने से पहले अनुमोदन करना होगा।</string>
+    <string name="group_meeting_type">अस्थायी बैठक समूह (बैठक)</string>
+    <string name="group_meeting_des">अस्थायी बैठक समूह (बैठक): निर्माण के बाद, आप इच्छानुसार प्रवेश और निकास कर सकते हैं, और समूह में शामिल होने से पहले संदेशों को देखने का समर्थन करते हैं; यह ऑडियो और वीडियो कॉन्फ्रेंस स्थितियों, ऑनलाइन शिक्षा स्थितियों और अन्य स्थितियों के लिए उपयुक्त है जो वास्तविक समय ऑडियो और वीडियो उत्पादों के साथ संयुक्त हैं।</string>
+    <string name="group_commnity_type">कम्युनिटी (कम्युनिटी)</string>
+    <string name="group_commnity_des">कम्युनिटी (कम्युनिटी): निर्माण के बाद, आप इच्छानुसार प्रवेश और निकास कर सकते हैं, 100,000 लोगों तक का समर्थन करते हैं, ऐतिहासिक संदेश भंडारण का समर्थन करते हैं, और उपयोगकर्ताओं द्वारा समूह आईडी खोजने और समूह आवेदन शुरू करने के बाद, वे प्रशासक अनुमोदन के बिना समूह में शामिल हो सकते हैं।</string>
+    <string name="group_name_edit_null_tips">ग्रुप नाम खाली नहीं हो सकता!</string>
+    <string name="group_name_edit_exceed_tips">ग्रुप नाम अधिकतम 30 बाइट!</string>
+    <string name="group_id_edit_format_tips">ग्रुप आईडी उपसर्ग @TGS# नहीं हो सकता!</string>
+    <string name="community_id_edit_format_tips">कम्युनिटी आईडी उपसर्ग @TGS#_ होना चाहिए!</string>
+    <string name="group_id_edit_exceed_tips">ग्रुप आईडी अधिकतम 48 बाइट!</string>
+    <string name="group_type_content_title">विस्तृत उत्पाद दस्तावेज देखें</string>
+    <string name="group_type_content_url">उत्पाद दस्तावेज</string>
+    <string name="group_type_content_button">उत्पाद दस्तावेज देखें</string>
+</resources>

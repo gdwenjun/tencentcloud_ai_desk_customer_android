@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="open_file_tips">फ़ाइल खोलने के लिए एक ऐप चुनें</string>
+
+    <string name="cancel">रद्द करें</string>
+    <string name="sure">पुष्टि करें</string>
+    <string name="core_permission_dialog_title">अनुमति अनुरोध</string>
+    <string name="core_permission_dialog_positive_setting_text">सेटिंग्स</string>
+    <string name="date_yesterday">कल</string>
+    <string name="date_year_short">वववव</string>
+    <string name="date_month_short">मम</string>
+    <string name="date_day_short">दद</string>
+    <string name="date_hour_short">घघ</string>
+    <string name="date_minute_short">मम</string>
+    <string name="date_second_short">सेसे</string>
+
+    <string name="core_float_permission_hint">कृपया \"पृष्ठभूमि में चलते समय पॉप-अप विंडो प्रदर्शित करें\" और \"पॉप-अप विंडो प्रदर्शित करें\" दोनों अनुमतियों को सक्षम करें</string>
+</resources>

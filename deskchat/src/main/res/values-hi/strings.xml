@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pic">एल्बम</string>
+    <string name="photo">फोटो लें</string>
+    <string name="video">वीडियो रिकॉर्ड करें</string>
+    <string name="file">फ़ाइल</string>
+
+    <string name="release_end">भेजने के लिए छोड़ें</string>
+    <string name="hold_say">बात करने के लिए दबाएं</string>
+
+    <string name="copy_action">कॉपी करें</string>
+    <string name="translate_action">अनुवाद करें</string>
+    <string name="delete_action">हटाएं</string>
+    <string name="revoke_action">वापस लें</string>
+    <string name="resend_action">फिर से भेजें</string>
+    <string name="hide_action">छुपाएं</string>
+    <string name="chat_speaker_mode_on_action">स्पीकर चालू करें</string>
+    <string name="chat_speaker_mode_off_action">कान में बजाएं</string>
+
+    <string name="chat_speaker_mode_on_tip">स्पीकर मोड चालू</string>
+    <string name="chat_speaker_mode_off_tip">स्पीकर मोड बंद</string>
+    <string name="copy_success_tip">कॉपी सफल</string>
+
+    <string name="chat_message_detail">संदेश विवरण</string>
+
+    <string name="titlebar_back">वापस</string>
+    <string name="forward_tip">कृपया संदेश चुनें!</string>
+    <string name="forward_mode_onebyone">एक-एक करके अग्रेषित करें</string>
+    <string name="forward_mode_merge">मिलाकर अग्रेषित करें</string>
+    <string name="forward_button">अग्रेषित करें</string>
+    <string name="reply_button">उत्तर दें</string>
+    <string name="quote_button">उद्धृत करें</string>
+    <string name="info_button">जानकारी</string>
+    <string name="delete_button">हटाएं</string>
+    <string name="chat_delete_msg_tip">अभी हटाएं</string>
+
+    <string name="forward_chats">ग्रुप चैट इतिहास</string>
+    <string name="and_text">और</string>
+    <string name="forward_chats_c2c">चैट इतिहास</string>
+    <string name="forward_compatible_text">मिलाकर अग्रेषित करना उपलब्ध नहीं है। पहले नवीनतम संस्करण में अपग्रेड करें।</string>
+    <string name="forward_chat_record">चैट रिकॉर्ड</string>
+
+    <string name="forward_failed_tip">असफल संदेशों को अग्रेषित नहीं कर सकते।</string>
+    <string name="forward_group_note_or_poll_failed_tip">ग्रुप-नोट या पोल संदेशों को अग्रेषित नहीं कर सकते।</string>
+    <string name="forward_oneByOne_limit_number_tip">बहुत सारे संदेशों के कारण संदेशों को एक-एक करके अग्रेषित नहीं कर सकते।</string>
+
+    <string name="and_and"> </string>
+    <string name="be_friend">अब आपका संपर्क है।</string>
+
+    <string name="join_group_tip">आपको ग्रुप में आमंत्रित किया गया है: </string>
+    <string name="joined_tip">आप ग्रुप में शामिल हो गए हैं: </string>
+    <string name="reject_join_tip">आपको ग्रुप में शामिल होने से रोका गया है: </string>
+    <string name="kick_group">आपको ग्रुप से निकाल दिया गया है: </string>
+
+    <string name="send_two_mins">संदेश 2 मिनट पहले भेजा गया</string>
+    <string name="revoke_fail">वापस लेना असफल</string>
+
+    <string name="wait_tip">कृपया बाद में फिर से कोशिश करें</string>
+    <string name="group_apply_tips">%1$d ग्रुप शामिल होने के अनुरोध</string>
+
+    <string name="dismiss_tip_before">आपका ग्रुप</string>
+    <string name="dismiss_tip_after">भंग कर दिया गया है।</string>
+    <string name="get_system_notice">एक कस्टम सिस्टम सूचना प्राप्त हुई: </string>
+
+    <string name="down_cancle_send">रद्द करने के लिए ऊपर स्लाइड करें</string>
+    <string name="say_time_short">संदेश बहुत छोटा</string>
+    <string name="record_fail">रिकॉर्डिंग असफल</string>
+    <string name="up_cancle_send">रद्द करने के लिए छोड़ें</string>
+
+    <string name="send">भेजें</string>
+
+    <string name="custom_msg">[कस्टम संदेश]</string>
+    <string name="custom_emoji">[एनिमेटेड स्टिकर]</string>
+    <string name="picture_extra">[छवि]</string>
+    <string name="video_extra">[वीडियो]</string>
+    <string name="audio_extra">[आवाज़]</string>
+    <string name="file_extra">[फ़ाइल]</string>
+    <string name="location_extra">[स्थान]</string>
+
+    <string name="locate_origin_msg_failed_tip">मूल संदेश का पता नहीं लगा सकते।</string>
+
+    <string name="forward_extra">[चैट रिकॉर्ड]</string>
+    <string name="revoke_tips_you">आपने एक संदेश वापस ले लिया।</string>
+    <string name="revoke_tips">ने एक संदेश वापस ले लिया।</string>
+    <string name="revoke_tips_other">एक संदेश वापस ले लिया गया।</string>
+
+    <string name="create_group">ग्रुप बनाएं</string>
+    <string name="create_community">कम्युनिटी बनाएं</string>
+    <string name="etc">, आदि।</string>
+    <string name="join_group">%s ग्रुप में शामिल हुआ</string>
+    <string name="invite_joined_group">%1$s ने %2$s को ग्रुप में आमंत्रित किया</string>
+    <string name="quit_group">%s ग्रुप छोड़ गया</string>
+    <string name="kick_group_tip">%1$s ने %2$s को ग्रुप से हटा दिया</string>
+    <string name="be_group_manager">%s को ग्रुप मैनेजर बनाया गया</string>
+    <string name="cancle_group_manager">%s को ग्रुप मैनेजर से हटा दिया गया</string>
+    <string name="modify_group_name_is">%1$s ने ग्रुप का नाम %2$s में बदल दिया</string>
+    <string name="modify_notice">%1$s ने ग्रुप नोटिस को %2$s में बदल दिया</string>
+    <string name="modify_introduction">%1$s ने ग्रुप परिचय को %2$s में बदल दिया</string>
+    <string name="modify_shut_up_all">%s ने सभी सदस्यों को म्यूट कर दिया</string>
+    <string name="modify_cancel_shut_up_all">%s ने सभी सदस्यों का म्यूट हटा दिया</string>
+    <string name="move_owner">%1$s ने ग्रुप का स्वामित्व %2$s को स्थानांतरित कर दिया</string>
+    <string name="modify_group_avatar">%s ने ग्रुप अवतार बदल दिया</string>
+    <string name="banned">%1$s को %2$s के लिए म्यूट कर दिया गया</string>
+    <string name="cancle_banned">%s का म्यूट हटा दिया गया</string>
+    <string name="modify_group_add_opt">%1$s ने ग्रुप जॉइन सेटिंग को %2$s में बदल दिया</string>
+    <string name="modify_group_invite_opt">%1$s ने ग्रुप इनवाइट सेटिंग को %2$s में बदल दिया</string>
+    <string name="group_add_opt_auto_approval">स्वचालित अनुमोदन</string>
+    <string name="group_add_opt_admin_approve">एडमिन अनुमोदन</string>
+    <string name="group_add_opt_join_disable">शामिल होने से प्रतिबंधित</string>
+    <string name="group_add_opt_invite_disable">आमंत्रित करने से प्रतिबंधित</string>
+
+    <string name="modify_topic_name_is">%1$s ने टॉपिक का नाम %2$s में बदल दिया</string>
+    <string name="modify_topic_notice">%1$s ने टॉपिक नोटिस को %2$s में बदल दिया</string>
+    <string name="modify_topic_introduction">%1$s ने ग्रुप परिचय को %2$s में बदल दिया</string>
+    <string name="modify_topic_avatar">%s ने ग्रुप अवतार बदल दिया</string>
+
+    <string name="typing">टाइप कर रहे हैं...</string>
+    <string name="titlebar_mutiselect">चुनें</string>
+    <string name="audio_permission_error">ऑडियो अनुमति आवश्यक</string>
+    <string name="record_occupied">रिकॉर्ड व्यस्त</string>
+    <string name="record_null">रिकॉर्ड नल है</string>
+    <string name="record_limit_tips">अधिकतम आवाज़ की लंबाई पहुंच गई</string>
+    <string name="record_rejected_for_in_call">एक ऑडियो और वीडियो कॉल चल रहा है, कृपया बाद में फिर से कोशिश करें</string>
+    <string name="record_rejected_for_in_recording">वर्तमान रिकॉर्डिंग समाप्त नहीं हुई</string>
+    <string name="play_error_tip">आवाज़ फ़ाइल क्षतिग्रस्त है या मौजूद नहीं है</string>
+    <string name="input_tip">कोई उपनाम नहीं। फिर से दर्ज करें।</string>
+    <string name="chat_camera_occupied_tip">अन्य फ़ंक्शन कैमरा का उपयोग कर रहे हैं।</string>
+    <string name="chat_mic_is_being_used_cant_record">माइक्रोफोन का उपयोग किसी अन्य फ़ंक्शन द्वारा किया जा रहा है, रिकॉर्ड नहीं कर सकते।</string>
+    <string name="chat_record_audio_failed">ऑडियो रिकॉर्डिंग असफल।</string>
+
+    <string name="delivered">को डिलीवर किया गया</string>
+    <string name="someone_unread">%d अपठित</string>
+    <string name="someone_have_read">%d ने पढ़ा</string>
+
+    <string name="un_download">डाउनलोड नहीं किया गया</string>
+    <string name="downloaded">डाउनलोड किया गया</string>
+    <string name="downloading">डाउनलोड हो रहा है...</string>
+    <string name="send_failed">भेजना असफल</string>
+    <string name="send_failed_file_not_exists">भेजना असफल, फ़ाइल मौजूद नहीं है</string>
+    <string name="sended">भेजा गया</string>
+    <string name="sending">भेजा जा रहा है...</string>
+    <string name="open_file_tips">फ़ाइल खोलने के लिए एक ऐप चुनें</string>
+    <string name="download_file_error">वीडियो डाउनलोड असफल: </string>
+    <string name="voice_play_tip">आवाज़ फ़ाइल डाउनलोड नहीं की गई।</string>
+
+    <string name="device_info">डिवाइस जानकारी:</string>
+    <string name="system_version">\n सिस्टम संस्करण:</string>
+    <string name="sdk_version">\n SDK संस्करण:</string>
+
+    <string name="permission_content">इस फ़ीचर का उपयोग करने के लिए, आपको अनुमति देनी होगी। चूंकि आपने संबंधित अनुमति अक्षम कर दी है, कृपया अनुमति को मैन्युअल रूप से सक्षम करें।</string>
+    <string name="setting">सेटिंग्स</string>
+
+    <string name="no_event_cancle_tip">ब्राउज़र पर कोई रद्द करने की घटना नहीं</string>
+    <string name="no_event_confirm_tip">ब्राउज़र पर कोई पुष्टि करने की घटना नहीं</string>
+
+    <string name="record_time_tip">रिकॉर्डिंग का समय बहुत कम है।</string>
+    <string name="tap_tips">फोटो के लिए टैप करें, रिकॉर्ड के लिए होल्ड करें</string>
+    <string name="tap_capture">फोटो लेने के लिए टैप करें</string>
+    <string name="tap_video">वीडियो रिकॉर्ड करने के लिए होल्ड करें</string>
+
+    <string name="completed">पूरा</string>
+    <string name="view_original_image">पूरी छवि देखें</string>
+
+    <string name="at_all">सभी</string>
+    <string name="ui_at_all">[@सभी]</string>
+    <string name="ui_at_me">[कोई मुझे @ कर रहा है]</string>
+    <string name="ui_at_all_me">[@सभी][कोई मुझे @ कर रहा है]</string>
+    <string name="drafts">[ड्राफ्ट]</string>
+
+    <string name="group_apply_click_handle">प्रोसेस करने के लिए टैप करें</string>
+    <string name="no_support_msg">असमर्थित कस्टम संदेश</string>
+
+    <string name="live">का लाइव स्ट्रीम</string>
+    <string name="live_group_live_streaming">लाइव स्ट्रीमिंग</string>
+    <string name="live_group_live_end">लाइव समाप्त</string>
+    <string name="live_group_user_live">%s लाइव</string>
+    <string name="live_group_live">लाइव ग्रुप</string>
+
+    <string name="start_group_call">ग्रुप कॉल शुरू करें</string>
+    <string name="start_call">कॉल शुरू करें</string>
+    <string name="cancle_group_call">ग्रुप कॉल रद्द करें</string>
+    <string name="cancle_call">कॉल रद्द करें</string>
+    <string name="other_line_busy">लाइन व्यस्त</string>
+    <string name="reject_group_calls">ग्रुप कॉल अस्वीकार करें</string>
+    <string name="no_response_call">कोई उत्तर नहीं</string>
+    <string name="accept_call">उत्तर दिया गया</string>
+    <string name="line_busy">लाइन व्यस्त</string>
+    <string name="reject_call">अस्वीकार</string>
+    <string name="invalid_command">अमान्य कमांड</string>
+    <string name="stop_group_call">ग्रुप कॉल समाप्त करें</string>
+    <string name="stop_call_tip">अवधि:</string>
+    <string name="reject_calls">कॉल अस्वीकार करें</string>
+    <string name="chat_calling_switch_to_audio">वॉइस कॉल पर स्विच करें</string>
+    <string name="chat_calling_switch_to_audio_accept">वीडियो से वॉइस पर स्विच करने की पुष्टि करें</string>
+    <string name="chat_calling_unknown_invitation">अज्ञात निमंत्रण</string>
+
+    <string name="test_custom_message">विवरण देखें>></string>
+
+    <string name="test_custom_action">कस्टम</string>
+    <string name="welcome_tip">Tencent Cloud Chat में आपका स्वागत है!</string>
+
+    <string name="resend_tips">क्या आप वाकई फिर से भेजना चाहते हैं?</string>
+    <string name="delete_tips">क्या आप वाकई इस संदेश को हटाना चाहते हैं?</string>
+    <string name="reedit_msg">फिर से संपादित करें</string>
+    <string name="save_success">सफलतापूर्वक सहेजा गया</string>
+    <string name="save_failed">सहेजना असफल</string>
+    <string name="saving_tips">सहेजा जा रहा है</string>
+
+    <string name="back_to_lastmessage">अंतिम संदेश पर जाएं</string>
+    <string name="back_to_newmessage"> नया संदेश</string>
+    <string name="back_to_atmessage_all">\@सभी</string>
+    <string name="back_to_atmessage_me">कोई मुझे @ कर रहा है</string>
+
+    <string name="chat_permission_mic_reason_title">%s माइक्रोफोन एक्सेस के लिए आवेदन करता है</string>
+    <string name="chat_permission_mic_reason">आपको वॉइस मैसेज भेजने, वीडियो बनाने और ऑडियो और वीडियो कॉल करने के लिए, कृपया हमें माइक्रोफोन एक्सेस की अनुमति दें।</string>
+    <string name="chat_permission_camera_reason_title">%s कैमरा अनुमति के लिए आवेदन करता है</string>
+    <string name="chat_permission_camera_reason">आपको संपर्कों को भेजने के लिए फोटो या वीडियो लेने और वीडियो कॉल करने के लिए, कृपया हमें वेबकैम एक्सेस की अनुमति दें।</string>
+    <string name="chat_permission_storage_reason_title">%s स्टोरेज अनुमति के लिए आवेदन करता है</string>
+    <string name="chat_permission_storage_reason">आपको फोटो और वीडियो को अपने डिवाइस पर सेव करने के लिए, कृपया हमें अपने डिवाइस पर फोटो और वीडियो लिखने की अनुमति दें।</string>
+    <string name="chat_permission_mic_dialog_alert">सेटिंग्स->ऐप्स->%s में माइक्रोफोन एक्सेस की अनुमति दें ताकि वॉइस मैसेज, वीडियो कैमरा और ऑडियो और वीडियो कॉल सामान्य रूप से उपयोग कर सकें</string>
+    <string name="chat_permission_camera_dialog_alert">सेटिंग्स->ऐप्स->%s में कैमरा एक्सेस की अनुमति दें ताकि फोटो, वीडियो और वीडियो कॉलिंग फ़ंक्शन सामान्य रूप से उपयोग कर सकें</string>
+    <string name="chat_permission_storage_dialog_alert">सेटिंग्स->ऐप्स->%s में स्टोरेज एक्सेस की अनुमति दें ताकि फोटो और वीडियो सेव करने का फ़ंक्शन सामान्य रूप से उपयोग कर सकें</string>
+
+    <string name="chat_message_read_receipt">संदेश पढ़ा गया रसीद</string>
+    <string name="chat_i_know">मैं समझ गया</string>
+    <string name="chat_no_more_reminders">और कोई अनुस्मारक नहीं</string>
+    <string name="chat_im_flagship">प्रीमियम संस्करण</string>
+    <string name="chat_buying_guidelines">मूल्य विवरण</string>
+    <string name="chat_im_flagship_edition_update_tip">%s फ़ीचर केवल प्रीमियम संस्करण के लिए उपलब्ध है, जिसका उपयोग प्रीमियम संस्करण खरीदने के बाद किया जा सकता है। विवरण के लिए मूल्य दिशानिर्देश देखें।</string>
+
+    <string name="chat_reply_detail">उत्तर विवरण</string>
+
+    <string name="chat_not_read">अपठित</string>
+
+    <string name="custom_evaluation_message">इस सेवा का मूल्यांकन</string>
+    
+    <string name="chat_input_edit_hint_text">संदेश भेजें</string>
+    <string name="chat_header_not_desc">अभी तक कोई विवरण नहीं।</string>
+    <string name="chat_tips_not_login">लॉग इन नहीं किया गया।</string>
+
+    <string name="chat_user_status_online">ऑनलाइन</string>
+    <string name="chat_user_status_offline">ऑफलाइन</string>
+    <string name="chat_user_status_unknown">अज्ञात</string>
+
+    <string name="chat_start_audio_call">वॉइस कॉल</string>
+    <string name="chat_start_video_call">वीडियो कॉल</string>
+
+    <string name="chat_call_reject_caller">कॉल उपयोगकर्ता द्वारा अस्वीकार किया गया</string>
+    <string name="chat_call_reject_callee">अस्वीकार किया गया</string>
+    <string name="chat_call_cancel_caller">रद्द किया गया</string>
+    <string name="chat_call_cancel_callee">कॉल कॉलर द्वारा रद्द किया गया</string>
+    <string name="chat_call_timeout_caller">कॉल का उत्तर नहीं दिया गया</string>
+    <string name="chat_call_timeout_callee">कॉल कॉलर द्वारा रद्द किया गया</string>
+    <string name="chat_call_line_busy_caller">लाइन व्यस्त</string>
+    <string name="chat_call_line_busy_callee">कॉल कॉलर द्वारा रद्द किया गया</string>
+    <string name="chat_group_call_send">ने ग्रुप कॉल शुरू किया</string>
+    <string name="chat_group_call_end">ग्रुप कॉल समाप्त करें</string>
+    <string name="chat_group_call_no_answer">कोई उत्तर नहीं</string>
+    <string name="chat_group_call_reject_format">%s द्वारा अस्वीकार किया गया</string>
+    <string name="chat_group_call_accept_format">%s द्वारा उत्तर दिया गया</string>
+    <string name="chat_group_call_switch_to_audio_format">%s द्वारा ऑडियो कॉल पर स्विच किया गया</string>
+    <string name="chat_group_call_confirm_switch_to_audio_format">%s द्वारा ऑडियो कॉल पर स्विच करने की पुष्टि</string>
+
+    <string name="chat_quick_tap_message_default_action_name">गुदगुदाया</string>
+    <string name="chat_quick_tap_message_action_from_me">मैंने %1$s "%2$s"</string>
+    <string name="chat_quick_tap_message_action_to_me">"%1$s" %2$s मुझे</string>
+    <string name="chat_quick_tap_message_action">"%1$s" %2$s "%3$s"</string>
+
+    <string name="chat_risk_image_message_alert">संवेदनशील सामग्री शामिल है, देखने में असमर्थ</string>
+    <string name="chat_risk_sound_message_alert">संवेदनशील सामग्री शामिल है, सुनने में असमर्थ</string>
+    <string name="chat_risk_send_message_failed_alert">संवेदनशील सामग्री शामिल है, भेजना असफल</string>
+    <string name="chat_risk_quote_message_alert">संवेदनशील सामग्री शामिल है, उद्धरण असफल</string>
+    <string name="chat_risk_reply_message_alert">संवेदनशील सामग्री शामिल है, उत्तर असफल</string>
+    <string name="chat_scan_risk_image_message_alert">छवि में संवेदनशील सामग्री का पता चला, अस्थायी रूप से देखने में असमर्थ</string>
+    <string name="chat_scan_risk_video_message_alert">वीडियो में संवेदनशील सामग्री का पता चला, अस्थायी रूप से देखने में असमर्थ</string>
+    <string name="chat_risk_content">[उल्लंघन सामग्री]</string>
+    <string name="chat_risk_sound">[उल्लंघन ऑडियो]</string>
+    <string name="chat_risk_image">[उल्लंघन छवि]</string>
+    <string name="chat_risk_video">[उल्लंघन वीडियो]</string>
+
+    <string name="chat_recent_use">हाल का उपयोग</string>
+    <string name="chat_all_emojis">सभी इमोजी</string>
+
+    <string name="chat_group_pin_message">पिन करें</string>
+    <string name="chat_group_unpin_message">अनपिन करें</string>
+    <string name="chat_group_message_pinned">%s ने एक संदेश पिन किया</string>
+    <string name="chat_group_message_unpinned">%s ने एक पिन किया गया संदेश हटाया</string>
+    <string name="chat_unpinned_button_text">हटाएं</string>
+    <string name="chat_message_is_pinned">संदेश पहले से ही पिन किया गया है।</string>
+    <string name="chat_message_is_unpinned">इस संदेश को पहले से ही अनपिन कर दिया गया है।</string>
+
+    <string name="chat_quote_origin_message_revoked">उद्धृत सामग्री वापस ले ली गई है</string>
+    <string name="chat_reply_origin_message_revoked">उत्तर सामग्री वापस ले ली गई है</string>
+
+</resources>

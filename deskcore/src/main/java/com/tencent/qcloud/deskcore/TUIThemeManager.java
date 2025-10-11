@@ -44,6 +44,9 @@ public class TUIThemeManager {
     public static final String LANGUAGE_ZH_CN = "zh";
     public static final String LANGUAGE_EN = "en";
     public static final String LANGUAGE_AR = "ar";
+    public static final String LANGUAGE_TR = "tr";  // 土耳其语
+    public static final String LANGUAGE_FR = "fr";  // 法语
+    public static final String LANGUAGE_HI = "hi";  // 印地语
 
     private static final class ThemeManagerHolder {
         private static final TUIThemeManager instance = new TUIThemeManager();
@@ -67,6 +70,9 @@ public class TUIThemeManager {
         languageMap.put(LANGUAGE_ZH_CN, Locale.SIMPLIFIED_CHINESE);
         languageMap.put(LANGUAGE_EN, Locale.ENGLISH);
         languageMap.put(LANGUAGE_AR, new Locale("ar"));
+        languageMap.put(LANGUAGE_TR, new Locale("tr"));  // 土耳其语
+        languageMap.put(LANGUAGE_FR, Locale.FRENCH);     // 法语
+        languageMap.put(LANGUAGE_HI, new Locale("hi"));  // 印地语
     }
 
     public static void setTheme(Context context) {

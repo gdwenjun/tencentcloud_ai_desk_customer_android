@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="new_friend">Nouveaux Contacts</string>
+    <string name="group">Conversations de Groupe</string>
+    <string name="blacklist">Liste de Blocage</string>
+    <string name="contact_count">%d contact(s)</string>
+    <string name="contact_title">Contacts</string>
+    <string name="contact_add_friend_remark">Remarque</string>
+    <string name="no_friend_apply">Aucune demande de contact</string>
+    <string name="at_all">Tous</string>
+
+    <string name="success">Réussi</string>
+    <string name="contact_add_failed">Échec</string>
+    <string name="contact_add_success">Réussi</string>
+    <string name="have_be_friend">Vous êtes déjà contacts l\'un de l\'autre</string>
+    <string name="friend_limit">Le nombre de vos contacts dépasse la limite.</string>
+    <string name="other_friend_limit">Le nombre de contacts de l\'autre utilisateur dépasse la limite.</string>
+    <string name="in_blacklist">Vous avez bloqué cet utilisateur.</string>
+    <string name="forbid_add_friend">Cet utilisateur a désactivé les demandes de contact.</string>
+    <string name="set_in_blacklist">Vous avez été bloqué.</string>
+    <string name="wait_agree_friend">Demande envoyée</string>
+    <string name="send_request">Demande envoyée</string>
+    <string name="contact_add_more_info">Info</string>
+    <string name="contact_add_more_send_request_text">Envoyer</string>
+
+    <string name="add_group_permission_deny">Interdit de rejoindre</string>
+    <string name="add_group_allready_member">L\'utilisateur est membre du groupe</string>
+    <string name="add_group_not_found">Le groupe n\'existe pas</string>
+    <string name="add_group_full_member">Le nombre de membres du groupe a atteint la limite</string>
+    <string name="contact_search">Rechercher</string>
+
+    <string name="request_agree">Accepter</string>
+    <string name="request_accepted">Accepté</string>
+    <string name="request_waiting">En attente</string>
+    <string name="profile_detail">Détails</string>
+    <string name="profile_remark_edit">Modifier l\'alias</string>
+    <string name="contact_friend_remark">Définir l\'alias</string>
+    <string name="contact_friend_group">Groupe</string>
+    <string name="contact_set_add_wording">Message de vérification</string>
+    <string name="contact_add_wording">Message de vérification：</string>
+    <string name="contact_add_friend_default_validation">Je suis %s</string>
+    <string name="contact_set_remark_and_group">Remarque</string>
+    <string name="contact_profile_title_edit">Modifier</string>
+
+    <string name="profile_id">Compte</string>
+    <string name="profile_add_wording">Message de vérification</string>
+    <string name="profile_remark">Alias</string>
+    <string name="profile_black">Bloquer</string>
+    <string name="profile_chat">Envoyer un message</string>
+    <string name="profile_delete_friend">Supprimer le contact</string>
+    <string name="profile_voice_chat">Appel vocal</string>
+    <string name="profile_video_chat">Appel vidéo</string>
+    <string name="profile_clear_message">Effacer l\'historique de chat</string>
+    <string name="profile_chat_background">Arrière-plan de chat</string>
+    <string name="chat_background_title">Arrière-plan</string>
+    <string name="contact_signature_tag">Statut : </string>
+    <string name="contact_no_status">Aucun statut</string>
+    <string name="contact_account_tag">ID : </string>
+    <string name="contact_group_type_tag">Type de groupe : </string>
+    <string name="contact_my_friend">Mes contacts</string>
+
+    <string name="contact_profile_message">`Message`</string>
+    <string name="contact_profile_audio_call">Audio</string>
+    <string name="contact_profile_video_call">Vidéo</string>
+
+    <string name="select_chat">Sélectionner l\'utilisateur de chat</string>
+
+    <string name="chat_to_top">Épingler</string>
+
+    <string name="clear_msg_tip">Êtes-vous sûr de vouloir effacer l\'historique de chat?</string>
+    <string name="contact_delete_friend_tip">Êtes-vous sûr de vouloir supprimer le contact?</string>
+
+    <string name="tips_empty_group_member">Sélectionner les membres</string>
+    <string name="tips_empty_group_type">Sélectionner une méthode pour rejoindre le groupe</string>
+
+    <string name="accept">Accepter</string>
+    <string name="refuse">Refuser</string>
+    <string name="accepted">Accepté</string>
+    <string name="refused">Refusé</string>
+
+    <string name="add_friend">Ajouter un contact</string>
+    <string name="add_group">Ajouter un groupe</string>
+    <string name="start_conversation">Nouveau chat</string>
+    <string name="create_group_chat">Créer un chat de groupe</string>
+    <string name="create_chat_room">Créer une salle de chat</string>
+    <string name="create_community">Créer une communauté</string>
+    <string name="create_private_group">Créer un groupe de discussion</string>
+    <string name="hint_add_user_id">Entrer l\'ID</string>
+    <string name="hint_search_user_id">Rechercher par ID utilisateur</string>
+    <string name="hint_search_group_id">Rechercher par ID de groupe</string>
+    <string name="hint_add_wording">Entrer le message de vérification</string>
+    <string name="contact_add">Ajouter</string>
+    <string name="user_id">ID</string>
+    <string name="add_wording">Message de vérification</string>
+    <string name="create_group">Créer un groupe</string>
+    <string name="contact_create">Créer</string>
+    <string name="contact_next_step">Suivant</string>
+
+    <string name="modify_group_name">Modifier le nom du groupe</string>
+    <string name="add_group_member">Ajouter un membre</string>
+    <string name="group_join_type">Méthode d\'adhésion au groupe</string>
+    <string name="forbid_join">Interdit de rejoindre</string>
+    <string name="manager_judge">Approbation de l\'administrateur</string>
+    <string name="auto_judge">Approbation automatique</string>
+    <string name="input_tip">Pas de surnom. Entrer à nouveau.</string>
+    <string name="profile_msgrev_opt">Couper les notifications</string>
+    <string name="contact_modify_remark_rule">Seulement des lettres, chiffres, traits de soulignement et caractères chinois.</string>
+
+    <string name="contact_over_limit_tip">Au maximum %d peuvent être sélectionnés.</string>
+
+    <string name="contact_no_such_group">Cette conversation de groupe n\'existe pas.</string>
+    <string name="contact_no_such_user">Cet utilisateur n\'existe pas.</string>
+
+    <string name="contact_my_user_id">Mon ID utilisateur : %s</string>
+
+    <string name="contact_community">Communauté</string>
+    <string name="contact_i_know">J\'ai compris</string>
+    <string name="contact_no_more_reminders">Plus de rappels</string>
+    <string name="contact_im_flagship">Édition Premium</string>
+    <string name="contact_buying_guidelines">description des prix</string>
+    <string name="contact_im_flagship_edition_update_tip">La fonction %s est la fonction de l\'édition Premium IM, qui peut être utilisée après l\'achat du package Premium. Voir la description des prix pour plus de détails.</string>
+
+    <string name="contact_no_new_friend_application">Demande d\'ami vide</string>
+    <string name="contact_no_group">Conversations de groupe vides</string>
+    <string name="contact_no_block_list">Liste de blocage vide</string>
+    <string name="contact_selected_group_member">Participants</string>
+
+    <string name="group_choose_avatar">Choisir l\'avatar</string>
+    <string name="group_avatar_text">Avatar du groupe</string>
+    <string name="group_name_text">Nom du groupe</string>
+    <string name="modify_group_id">Modifier l\'ID du groupe</string>
+    <string name="group_id_option">ID du groupe (optionnel)</string>
+    <string name="group_type_text">Type de groupe</string>
+    <string name="group_created">Créer</string>
+    <string name="group_type_select_text">Sélectionner le type de groupe</string>
+    <string name="group_work_type">Groupe de travail d\'amis (Travail)</string>
+    <string name="group_work_content">Groupe de travail d\'amis (Travail) : Similaire aux groupes WeChat ordinaires, après création, seuls les amis déjà dans le groupe peuvent être invités à rejoindre, et il n\'y a pas besoin de l\'approbation de l\'invité ou de l\'approbation du propriétaire du groupe.</string>
+    <string name="group_public_type">Groupe social d\'étrangers (Public)</string>
+    <string name="group_public_des">Groupe social d\'étrangers (Public) : Similaire au groupe QQ, le propriétaire du groupe peut désigner l\'administrateur du groupe après création. Après que l\'utilisateur recherche l\'ID du groupe et lance une demande de groupe, le propriétaire du groupe ou l\'administrateur doit l\'approuver avant de rejoindre le groupe.</string>
+    <string name="group_meeting_type">Groupe de réunion temporaire (Réunion)</string>
+    <string name="group_meeting_des">Groupe de réunion temporaire (Réunion) : Après création, vous pouvez entrer et sortir à volonté, et supporter la visualisation des messages avant de rejoindre le groupe ; il convient aux scénarios de conférence audio et vidéo, aux scénarios d\'éducation en ligne et à d\'autres scénarios combinés avec des produits audio et vidéo en temps réel.</string>
+    <string name="group_commnity_type">Communauté (Communauté)</string>
+    <string name="group_commnity_des">Communauté (Communauté) : Après création, vous pouvez entrer et sortir à volonté, supporter jusqu\'à 100 000 personnes, supporter le stockage des messages historiques, et après que les utilisateurs recherchent l\'ID du groupe et lancent une demande de groupe, ils peuvent rejoindre le groupe sans approbation de l\'administrateur.</string>
+    <string name="group_name_edit_null_tips">Le nom du groupe ne peut pas être vide!</string>
+    <string name="group_name_edit_exceed_tips">Le nom du groupe jusqu\'à 30 octets!</string>
+    <string name="group_id_edit_format_tips">Le préfixe de l\'ID du groupe ne peut pas être @TGS#!</string>
+    <string name="community_id_edit_format_tips">Le préfixe de l\'ID de la communauté doit être @TGS#_!</string>
+    <string name="group_id_edit_exceed_tips">L\'ID du groupe jusqu\'à 48 octets!</string>
+    <string name="group_type_content_title">Voir la documentation produit détaillée</string>
+    <string name="group_type_content_url">documentation produit</string>
+    <string name="group_type_content_button">Voir la documentation produit</string>
+</resources>

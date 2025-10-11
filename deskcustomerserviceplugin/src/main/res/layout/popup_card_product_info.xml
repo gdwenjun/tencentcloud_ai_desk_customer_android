@@ -50,7 +50,6 @@
             android:id="@+id/product_name_edit"
             android:background="@drawable/core_edit_text_bg"
             android:textSize="@dimen/core_popup_card_edit_text_size"
-            android:layout_marginLeft="10dp"
             android:layout_marginStart="10dp"
             android:paddingLeft="@dimen/core_popup_card_edit_padding_left_right"
             android:paddingStart="@dimen/core_popup_card_edit_padding_left_right"
@@ -77,7 +76,6 @@
         <EditText
             android:id="@+id/product_description_edit"
             android:background="@drawable/core_edit_text_bg"
-            android:layout_marginLeft="10dp"
             android:layout_marginStart="10dp"
             android:textSize="@dimen/core_popup_card_edit_text_size"
             android:paddingLeft="@dimen/core_popup_card_edit_padding_left_right"
@@ -104,7 +102,6 @@
         <EditText
             android:id="@+id/product_picture_edit"
             android:background="@drawable/core_edit_text_bg"
-            android:layout_marginLeft="10dp"
             android:layout_marginStart="10dp"
             android:textSize="@dimen/core_popup_card_edit_text_size"
             android:paddingLeft="@dimen/core_popup_card_edit_padding_left_right"
@@ -131,7 +128,6 @@
         <EditText
             android:id="@+id/product_jump_edit"
             android:background="@drawable/core_edit_text_bg"
-            android:layout_marginLeft="10dp"
             android:layout_marginStart="10dp"
             android:textSize="@dimen/core_popup_card_edit_text_size"
             android:paddingLeft="@dimen/core_popup_card_edit_padding_left_right"

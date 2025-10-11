@@ -87,30 +87,30 @@
     <string name="create_community">创建社群</string>
     <string name="etc">等</string>
     <string name="join_group">%s加入群组</string>
-    <string name="invite_joined_group">%s邀请%s加入群组</string>
+    <string name="invite_joined_group">%1$s邀请%2$s加入群组</string>
     <string name="quit_group">%s退出群组</string>
-    <string name="kick_group_tip">%s将%s踢出群组</string>
+    <string name="kick_group_tip">%1$s将%2$s踢出群组</string>
     <string name="be_group_manager">%s被设置管理员</string>
     <string name="cancle_group_manager">%s被取消管理员</string>
-    <string name="modify_group_name_is">%s把群名称修改为%s</string>
-    <string name="modify_notice">%s把群公告修改为%s</string>
-    <string name="modify_introduction">%s把群简介修改为%s</string>
+    <string name="modify_group_name_is">%1$s把群名称修改为%2$s</string>
+    <string name="modify_notice">%1$s把群公告修改为%2$s</string>
+    <string name="modify_introduction">%1$s把群简介修改为%2$s</string>
     <string name="modify_shut_up_all">%s禁言全员</string>
     <string name="modify_cancel_shut_up_all">%s取消禁言全员</string>
-    <string name="move_owner">%s转让群主给%s</string>
+    <string name="move_owner">%1$s转让群主给%2$s</string>
     <string name="modify_group_avatar">%s修改了群头像</string>
-    <string name="banned">%s被禁言%s</string>
+    <string name="banned">%1$s被禁言%2$s</string>
     <string name="cancle_banned">%s被取消禁言</string>
-    <string name="modify_group_add_opt">%s修改加群方式为%s</string>
-    <string name="modify_group_invite_opt">%s修改邀请进群方式为%s</string>
+    <string name="modify_group_add_opt">%1$s修改加群方式为%2$s</string>
+    <string name="modify_group_invite_opt">%1$s修改邀请进群方式为%2$s</string>
     <string name="group_add_opt_auto_approval">自动审批</string>
     <string name="group_add_opt_admin_approve">管理员审批</string>
     <string name="group_add_opt_join_disable">禁止加群</string>
     <string name="group_add_opt_invite_disable">禁止邀请</string>
 
-    <string name="modify_topic_name_is">%s把话题名称修改为%s</string>
-    <string name="modify_topic_notice">%s把话题公告修改为%s</string>
-    <string name="modify_topic_introduction">%s把话题简介修改为%s</string>
+    <string name="modify_topic_name_is">%1$s把话题名称修改为%2$s</string>
+    <string name="modify_topic_notice">%1$s把话题公告修改为%2$s</string>
+    <string name="modify_topic_introduction">%1$s把话题简介修改为%2$s</string>
     <string name="modify_topic_avatar">%s修改了话题头像</string>
 
 
@@ -263,9 +263,9 @@
     <string name="chat_group_call_confirm_switch_to_audio_format">%s同意视频转语音</string>
 
     <string name="chat_quick_tap_message_default_action_name">拍了拍</string>
-    <string name="chat_quick_tap_message_action_from_me">我%s"%s"</string>
-    <string name="chat_quick_tap_message_action_to_me">"%s"%s我</string>
-    <string name="chat_quick_tap_message_action">"%s"%s"%s"</string>
+    <string name="chat_quick_tap_message_action_from_me">我%1$s"%2$s"</string>
+    <string name="chat_quick_tap_message_action_to_me">"%1$s"%2$s我</string>
+    <string name="chat_quick_tap_message_action">"%1$s"%2$s"%3$s"</string>
 
     <string name="chat_risk_image_message_alert">涉及敏感内容，无法查看</string>
     <string name="chat_risk_sound_message_alert">涉及敏感内容，无法收听</string>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="open_file_tips">Sélectionnez une application pour ouvrir le fichier</string>
+
+    <string name="cancel">Annuler</string>
+    <string name="sure">Confirmer</string>
+    <string name="core_permission_dialog_title">Demande d\'autorisation</string>
+    <string name="core_permission_dialog_positive_setting_text">Paramètres</string>
+    <string name="date_yesterday">Hier</string>
+    <string name="date_year_short">AAAA</string>
+    <string name="date_month_short">MM</string>
+    <string name="date_day_short">JJ</string>
+    <string name="date_hour_short">HH</string>
+    <string name="date_minute_short">MM</string>
+    <string name="date_second_short">SS</string>
+
+    <string name="core_float_permission_hint">Veuillez activer les autorisations \"Afficher la fenêtre contextuelle en arrière-plan\" et \"Afficher la fenêtre contextuelle\"</string>
+</resources>

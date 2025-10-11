@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="open_file_tips">फ़ाइल खोलने के लिए एक ऐप चुनें</string>
+    <string name="date_year_short">व</string>
+    <string name="date_month_short">म</string>
+    <string name="date_day_short">द</string>
+    <string name="date_hour_short">घ</string>
+    <string name="date_minute_short">मि</string>
+    <string name="date_second_short">से</string>
+    <string name="date_yesterday">कल</string>
+    <string name="chat_time_today">आज</string>
+
+    <string name="setting">सेटिंग्स</string>
+    <string name="setting_fail">सेटअप असफल!</string>
+    <string name="setting_success">सेटअप सफल!</string>
+    <string name="default_text">डिफ़ॉल्ट</string>
+    <string name="core_next_step">आगे</string>
+
+    <string name="revoke_tips_you">आपने एक संदेश हटा दिया।</string>
+    <string name="revoke_tips">ने एक संदेश हटा दिया।</string>
+    <string name="revoke_tips_other">एक संदेश हटा दिया गया।</string>
+    <string name="common_risk_msg_revoked_tips">अनुचित सामग्री वाला संदेश हटा दिया गया।</string>
+    <string name="chat_reply_num">%d उत्तर</string>
+    <string name="has_read">पढ़ा गया</string>
+    <string name="unread">अपठित</string>
+    <string name="has_all_read">सभी पढ़े गए</string>
+    <string name="someone_has_read">%d लोगों ने पढ़ा</string>
+
+    <string name="timcommon_no_support_msg">असमर्थित कस्टम संदेश</string>
+    <string name="translation_support">Tencent Cloud Chat द्वारा अनुवादित</string>
+    <string name="ai_generated_tip">कृत्रिम बुद्धिमत्ता द्वारा उत्पन्न सामग्री</string>
+
+</resources>

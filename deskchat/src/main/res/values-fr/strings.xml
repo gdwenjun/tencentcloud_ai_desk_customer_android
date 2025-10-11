@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pic">Album</string>
+    <string name="photo">Prendre une photo</string>
+    <string name="video">Enregistrer une vidéo</string>
+    <string name="file">Fichier</string>
+
+    <string name="release_end">Relâcher pour envoyer</string>
+    <string name="hold_say">Maintenir pour parler</string>
+
+    <string name="copy_action">Copier</string>
+    <string name="translate_action">Traduire</string>
+    <string name="delete_action">Supprimer</string>
+    <string name="revoke_action">Rappeler</string>
+    <string name="resend_action">Renvoyer</string>
+    <string name="hide_action">Masquer</string>
+    <string name="chat_speaker_mode_on_action">Activer le haut-parleur</string>
+    <string name="chat_speaker_mode_off_action">Lire dans l\'oreille</string>
+
+    <string name="chat_speaker_mode_on_tip">Mode haut-parleur activé</string>
+    <string name="chat_speaker_mode_off_tip">Mode haut-parleur désactivé</string>
+    <string name="copy_success_tip">Copie réussie</string>
+
+    <string name="chat_message_detail">Détails du message</string>
+
+    <string name="titlebar_back">Retour</string>
+    <string name="forward_tip">veuillez sélectionner un message!</string>
+    <string name="forward_mode_onebyone">Transférer un par un</string>
+    <string name="forward_mode_merge">Combiner et transférer</string>
+    <string name="forward_button">Transférer</string>
+    <string name="reply_button">Répondre</string>
+    <string name="quote_button">Citer</string>
+    <string name="info_button">Info</string>
+    <string name="delete_button">Supprimer</string>
+    <string name="chat_delete_msg_tip">Supprimer maintenant</string>
+
+    <string name="forward_chats">Historique de chat de groupe</string>
+    <string name="and_text">et</string>
+    <string name="forward_chats_c2c">Historique de chat</string>
+    <string name="forward_compatible_text">Combiner et transférer n\'est pas disponible. Mettez d\'abord à jour vers la dernière version.</string>
+    <string name="forward_chat_record">Enregistrement de chat</string>
+
+    <string name="forward_failed_tip">Impossible de transférer les messages échoués.</string>
+    <string name="forward_group_note_or_poll_failed_tip">Impossible de transférer les messages de note de groupe ou de sondage.</string>
+    <string name="forward_oneByOne_limit_number_tip">Impossible de transférer les messages un par un car il y a trop de messages.</string>
+
+    <string name="and_and"> </string>
+    <string name="be_friend">est maintenant votre contact.</string>
+
+    <string name="join_group_tip">Vous avez été invité au groupe : </string>
+    <string name="joined_tip">Vous avez rejoint le groupe : </string>
+    <string name="reject_join_tip">Vous avez été rejeté du groupe : </string>
+    <string name="kick_group">Vous avez été expulsé du groupe : </string>
+
+    <string name="send_two_mins">Message envoyé il y a plus de 2 min</string>
+    <string name="revoke_fail">Échec du rappel</string>
+
+    <string name="wait_tip">veuillez réessayer plus tard</string>
+    <string name="group_apply_tips">%1$d demande(s) d\'adhésion au groupe</string>
+
+    <string name="dismiss_tip_before">Votre groupe</string>
+    <string name="dismiss_tip_after">est dissous.</string>
+    <string name="get_system_notice">Notification système personnalisée reçue : </string>
+
+    <string name="down_cancle_send">Glisser vers le haut pour annuler</string>
+    <string name="say_time_short">Message trop court</string>
+    <string name="record_fail">Enregistrement échoué</string>
+    <string name="up_cancle_send">Relâcher pour annuler</string>
+
+    <string name="send">Envoyer</string>
+
+    <string name="custom_msg">[Messages personnalisés]</string>
+    <string name="custom_emoji">[Autocollant animé]</string>
+    <string name="picture_extra">[Image]</string>
+    <string name="video_extra">[Vidéo]</string>
+    <string name="audio_extra">[Voix]</string>
+    <string name="file_extra">[Fichier]</string>
+    <string name="location_extra">[Localisation]</string>
+
+    <string name="locate_origin_msg_failed_tip">Impossible de localiser le message original.</string>
+
+    <string name="forward_extra">[Enregistrement de chat]</string>
+    <string name="revoke_tips_you">Vous avez rappelé un message.</string>
+    <string name="revoke_tips">a rappelé un message.</string>
+    <string name="revoke_tips_other">Un message a été rappelé.</string>
+
+    <string name="create_group">Créer un groupe</string>
+    <string name="create_community">Créer une communauté</string>
+    <string name="etc">, etc.</string>
+    <string name="join_group">%s a rejoint le groupe</string>
+    <string name="invite_joined_group">%1$s a invité %2$s à rejoindre le groupe</string>
+    <string name="quit_group">%s a quitté le groupe</string>
+    <string name="kick_group_tip">%1$s a retiré %2$s du groupe</string>
+    <string name="be_group_manager">%s a été promu gestionnaire de groupe</string>
+    <string name="cancle_group_manager">%s a été rétrogradé de gestionnaire de groupe</string>
+    <string name="modify_group_name_is">%1$s a changé le nom du groupe en %2$s</string>
+    <string name="modify_notice">%1$s a changé l\'avis du groupe en %2$s</string>
+    <string name="modify_introduction">%1$s a changé l\'introduction du groupe en %2$s</string>
+    <string name="modify_shut_up_all">%s a réduit au silence tous les membres</string>
+    <string name="modify_cancel_shut_up_all">%s a annulé le silence de tous les membres</string>
+    <string name="move_owner">%1$s a transféré la propriété du groupe à %2$s</string>
+    <string name="modify_group_avatar">%s a changé l\'avatar du groupe</string>
+    <string name="banned">%1$s a été réduit au silence pendant %2$s</string>
+    <string name="cancle_banned">%s n\'est plus réduit au silence</string>
+    <string name="modify_group_add_opt">%1$s a changé le paramètre d\'adhésion au groupe en %2$s</string>
+    <string name="modify_group_invite_opt">%1$s a changé le paramètre d\'invitation au groupe en %2$s</string>
+    <string name="group_add_opt_auto_approval">Approbation automatique</string>
+    <string name="group_add_opt_admin_approve">Approbation de l\'administrateur</string>
+    <string name="group_add_opt_join_disable">Interdit de rejoindre</string>
+    <string name="group_add_opt_invite_disable">Interdit d\'inviter</string>
+
+    <string name="modify_topic_name_is">%1$s a changé le nom du sujet en %2$s</string>
+    <string name="modify_topic_notice">%1$s a changé l\'avis du sujet en %2$s</string>
+    <string name="modify_topic_introduction">%1$s a changé l\'introduction du groupe en %2$s</string>
+    <string name="modify_topic_avatar">%s a changé l\'avatar du groupe</string>
+
+    <string name="typing">En train de taper...</string>
+    <string name="titlebar_mutiselect">Sélectionner</string>
+    <string name="audio_permission_error">Permission audio nécessaire</string>
+    <string name="record_occupied">enregistrement occupé</string>
+    <string name="record_null">enregistrement est null</string>
+    <string name="record_limit_tips">Longueur maximale de voix atteinte</string>
+    <string name="record_rejected_for_in_call">Un appel audio et vidéo est en cours, veuillez réessayer plus tard</string>
+    <string name="record_rejected_for_in_recording">L\'enregistrement actuel n\'est pas terminé</string>
+    <string name="play_error_tip">Le fichier vocal est endommagé ou n\'existe pas</string>
+    <string name="input_tip">Pas de surnom. Entrer à nouveau.</string>
+    <string name="chat_camera_occupied_tip">D\'autres fonctions utilisent la caméra.</string>
+    <string name="chat_mic_is_being_used_cant_record">Le microphone est utilisé par une autre fonction, impossible d\'enregistrer.</string>
+    <string name="chat_record_audio_failed">Enregistrement audio échoué.</string>
+
+    <string name="delivered">Livré à</string>
+    <string name="someone_unread">%d non lu</string>
+    <string name="someone_have_read">%d ont lu</string>
+
+    <string name="un_download">Non téléchargé</string>
+    <string name="downloaded">Téléchargé</string>
+    <string name="downloading">Téléchargement...</string>
+    <string name="send_failed">Envoi échoué</string>
+    <string name="send_failed_file_not_exists">Envoi échoué, fichier n\'existe pas</string>
+    <string name="sended">Envoyé</string>
+    <string name="sending">Envoi...</string>
+    <string name="open_file_tips">Sélectionnez une application pour ouvrir le fichier</string>
+    <string name="download_file_error">Échec du téléchargement vidéo : </string>
+    <string name="voice_play_tip">Fichier vocal non téléchargé.</string>
+
+    <string name="device_info">info appareil :</string>
+    <string name="system_version">\n version système :</string>
+    <string name="sdk_version">\n version SDK :</string>
+
+    <string name="permission_content">Pour utiliser cette fonctionnalité, vous devez accorder la permission. Puisque vous avez désactivé la permission associée, veuillez activer manuellement la permission.</string>
+    <string name="setting">Paramètres</string>
+
+    <string name="no_event_cancle_tip">pas d\'événement d\'annulation sur le navigateur</string>
+    <string name="no_event_confirm_tip">pas d\'événement de confirmation sur le navigateur</string>
+
+    <string name="record_time_tip">Le temps d\'enregistrement est trop court.</string>
+    <string name="tap_tips">appuyer pour photo, maintenir pour enregistrer</string>
+    <string name="tap_capture">appuyer pour prendre une photo</string>
+    <string name="tap_video">maintenir pour enregistrer une vidéo</string>
+
+    <string name="completed">terminé</string>
+    <string name="view_original_image">Voir l\'image complète</string>
+
+    <string name="at_all">Tous</string>
+    <string name="ui_at_all">[@Tous]</string>
+    <string name="ui_at_me">[Quelqu\'un @ moi]</string>
+    <string name="ui_at_all_me">[@Tous][Quelqu\'un @ moi]</string>
+    <string name="drafts">[Brouillons]</string>
+
+    <string name="group_apply_click_handle">Appuyer pour traiter</string>
+    <string name="no_support_msg">Messages personnalisés non pris en charge</string>
+
+    <string name="live">diffusion en direct de</string>
+    <string name="live_group_live_streaming">Diffusion en direct</string>
+    <string name="live_group_live_end">Direct terminé</string>
+    <string name="live_group_user_live">%s en direct</string>
+    <string name="live_group_live">Groupe en direct</string>
+
+    <string name="start_group_call">Commencer l\'appel de groupe</string>
+    <string name="start_call">Commencer l\'appel</string>
+    <string name="cancle_group_call">Annuler l\'appel de groupe</string>
+    <string name="cancle_call">Annuler l\'appel</string>
+    <string name="other_line_busy">Ligne occupée</string>
+    <string name="reject_group_calls">Refuser l\'appel de groupe</string>
+    <string name="no_response_call">Pas de réponse</string>
+    <string name="accept_call">Répondu</string>
+    <string name="line_busy">Ligne occupée</string>
+    <string name="reject_call">refuser</string>
+    <string name="invalid_command">commande invalide</string>
+    <string name="stop_group_call">Terminer l\'appel de groupe</string>
+    <string name="stop_call_tip">Durée :</string>
+    <string name="reject_calls">Refuser l\'appel</string>
+    <string name="chat_calling_switch_to_audio">Passer à l\'appel vocal</string>
+    <string name="chat_calling_switch_to_audio_accept">Confirmer vidéo vers vocal</string>
+    <string name="chat_calling_unknown_invitation">Invitation inconnue</string>
+
+    <string name="test_custom_message">Voir les détails>></string>
+
+    <string name="test_custom_action">Personnalisé</string>
+    <string name="welcome_tip">Bienvenue sur Tencent Cloud Chat !</string>
+
+    <string name="resend_tips">Êtes-vous sûr de vouloir renvoyer ?</string>
+    <string name="delete_tips">Êtes-vous sûr de vouloir supprimer ce message ?</string>
+    <string name="reedit_msg">Ré-éditer</string>
+    <string name="save_success">Sauvegardé avec succès</string>
+    <string name="save_failed">Sauvegarde échouée</string>
+    <string name="saving_tips">Sauvegarde</string>
+
+    <string name="back_to_lastmessage">Aller au dernier message</string>
+    <string name="back_to_newmessage"> Nouveau(x) message(s)</string>
+    <string name="back_to_atmessage_all">\@Tous</string>
+    <string name="back_to_atmessage_me">Quelqu\'un @ moi</string>
+
+    <string name="chat_permission_mic_reason_title">%s demande l\'accès au microphone</string>
+    <string name="chat_permission_mic_reason">Pour que vous puissiez envoyer des messages vocaux, faire des vidéos et des appels audio et vidéo, veuillez nous permettre d\'accéder au microphone.</string>
+    <string name="chat_permission_camera_reason_title">%s demande la permission de la caméra</string>
+    <string name="chat_permission_camera_reason">Pour que vous puissiez prendre des photos ou des vidéos à envoyer aux contacts, et faire des appels vidéo, veuillez nous permettre d\'accéder à la webcam.</string>
+    <string name="chat_permission_storage_reason_title">%s demande la permission de stockage</string>
+    <string name="chat_permission_storage_reason">Pour que vous puissiez sauvegarder des photos et des vidéos sur votre appareil, veuillez nous permettre d\'écrire des photos et des vidéos sur votre appareil.</string>
+    <string name="chat_permission_mic_dialog_alert">Autoriser l\'accès au microphone dans Paramètres->Applications->%s pour utiliser les messages vocaux, caméras vidéo et appels audio et vidéo normalement</string>
+    <string name="chat_permission_camera_dialog_alert">Autoriser l\'accès à la caméra dans Paramètres->Applications->%s pour utiliser les fonctions photo, vidéo et appel vidéo normalement</string>
+    <string name="chat_permission_storage_dialog_alert">Autoriser l\'accès au stockage dans Paramètres->Applications->%s pour utiliser la fonction de sauvegarde de photos et vidéos normalement</string>
+
+    <string name="chat_message_read_receipt">Reçu de lecture de message</string>
+    <string name="chat_i_know">J\'ai compris</string>
+    <string name="chat_no_more_reminders">Plus de rappels</string>
+    <string name="chat_im_flagship">Édition Premium</string>
+    <string name="chat_buying_guidelines">description des prix</string>
+    <string name="chat_im_flagship_edition_update_tip">La fonctionnalité %s n\'est disponible que pour l\'édition Premium, qui peut être utilisée après l\'achat de l\'édition Premium. Voir les directives de prix pour plus de détails.</string>
+
+    <string name="chat_reply_detail">Détail de la réponse</string>
+
+    <string name="chat_not_read">Non lu</string>
+
+    <string name="custom_evaluation_message">Évaluation de ce service</string>
+    
+    <string name="chat_input_edit_hint_text">Envoyer un message</string>
+    <string name="chat_header_not_desc">Pas encore de description.</string>
+    <string name="chat_tips_not_login">Pas connecté.</string>
+
+    <string name="chat_user_status_online">en ligne</string>
+    <string name="chat_user_status_offline">hors ligne</string>
+    <string name="chat_user_status_unknown">inconnu</string>
+
+    <string name="chat_start_audio_call">Appel vocal</string>
+    <string name="chat_start_video_call">Appel vidéo</string>
+
+    <string name="chat_call_reject_caller">Appel refusé par l\'utilisateur</string>
+    <string name="chat_call_reject_callee">Refusé</string>
+    <string name="chat_call_cancel_caller">Annulé</string>
+    <string name="chat_call_cancel_callee">Appel annulé par l\'appelant</string>
+    <string name="chat_call_timeout_caller">Appel sans réponse</string>
+    <string name="chat_call_timeout_callee">Appel annulé par l\'appelant</string>
+    <string name="chat_call_line_busy_caller">Ligne occupée</string>
+    <string name="chat_call_line_busy_callee">Appel annulé par l\'appelant</string>
+    <string name="chat_group_call_send">a initié un appel de groupe</string>
+    <string name="chat_group_call_end">Terminer l\'appel de groupe</string>
+    <string name="chat_group_call_no_answer">pas de réponse</string>
+    <string name="chat_group_call_reject_format">Appel refusé par %s</string>
+    <string name="chat_group_call_accept_format">Répondu par %s</string>
+    <string name="chat_group_call_switch_to_audio_format">Passage à l\'appel audio par %s</string>
+    <string name="chat_group_call_confirm_switch_to_audio_format">Confirmation du passage à l\'appel audio par %s</string>
+
+    <string name="chat_quick_tap_message_default_action_name">chatouillé</string>
+    <string name="chat_quick_tap_message_action_from_me">Je %1$s "%2$s"</string>
+    <string name="chat_quick_tap_message_action_to_me">"%1$s" %2$s moi</string>
+    <string name="chat_quick_tap_message_action">"%1$s" %2$s "%3$s"</string>
+
+    <string name="chat_risk_image_message_alert">Contient du contenu sensible, impossible à voir</string>
+    <string name="chat_risk_sound_message_alert">Contient du contenu sensible, impossible à écouter</string>
+    <string name="chat_risk_send_message_failed_alert">Contient du contenu sensible, échec de l\'envoi</string>
+    <string name="chat_risk_quote_message_alert">Contient du contenu sensible, citation échouée</string>
+    <string name="chat_risk_reply_message_alert">Contient du contenu sensible, réponse échouée</string>
+    <string name="chat_scan_risk_image_message_alert">Image détectée contenant du contenu sensible, temporairement impossible à voir</string>
+    <string name="chat_scan_risk_video_message_alert">Vidéo détectée contenant du contenu sensible, temporairement impossible à voir</string>
+    <string name="chat_risk_content">[Contenu de violation]</string>
+    <string name="chat_risk_sound">[Audio de violation]</string>
+    <string name="chat_risk_image">[Image de violation]</string>
+    <string name="chat_risk_video">[Vidéo de violation]</string>
+
+    <string name="chat_recent_use">Utilisation récente</string>
+    <string name="chat_all_emojis">Tous les emojis</string>
+
+    <string name="chat_group_pin_message">Épingler</string>
+    <string name="chat_group_unpin_message">Désépingler</string>
+    <string name="chat_group_message_pinned">%s a épinglé un message</string>
+    <string name="chat_group_message_unpinned">%s a retiré un message épinglé</string>
+    <string name="chat_unpinned_button_text">Retirer</string>
+    <string name="chat_message_is_pinned">Le message est déjà épinglé.</string>
+    <string name="chat_message_is_unpinned">Ce message a déjà été désépinglé.</string>
+
+    <string name="chat_quote_origin_message_revoked">Le contenu cité a été rappelé</string>
+    <string name="chat_reply_origin_message_revoked">Le contenu de la réponse a été rappelé</string>
+
+</resources>

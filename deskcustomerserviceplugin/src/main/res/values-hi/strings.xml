@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="suggest">सुझाव दें</string>
+    <string name="session_end">सत्र समाप्त</string>
+    <string name="session_timeout">सत्र समय सीमा समाप्त</string>
+    <string name="invite_to_evaluation">हमारी सेवा का उपयोग करने के लिए धन्यवाद। कृपया इस सेवा का मूल्यांकन करें।</string>
+    <string name="submit_the_evaluation">मूल्यांकन सबमिट करें</string>
+    <string name="satisfaction_evaluation">संतुष्टि मूल्यांकन</string>
+    <string name="extension_satisfaction_evaluation">संतुष्टि मूल्यांकन</string>
+    <string name="customer_service">ग्राहक सेवा</string>
+    <string name="send_product_info">उत्पाद जानकारी भेजें</string>
+    <string name="product_card_input_info">कृपया उत्पाद जानकारी भरें</string>
+    <string name="product_card_close">बंद करें</string>
+    <string name="product_card_name">नाम</string>
+    <string name="product_card_description">विवरण</string>
+    <string name="product_card_picture_url">छवि लिंक</string>
+    <string name="product_card_jump_url">रेडायरेक्ट लिंक</string>
+    <string name="product_card_confirm">पुष्टि करें</string>
+    <string name="product_info_input_empty">यह फ़ील्ड खाली नहीं हो सकता</string>
+    <string name="common_phrases">सामान्य वाक्यांश</string>
+    <string name="common_human_service">मानव सहायता</string>
+    <string name="customer_service_unsupport_tips">ग्राहक सेवा वर्तमान में बीटा चरण में एक प्रीमियम सुविधा है। सक्रियता और परीक्षण के लिए [Tencent Cloud तत्काल मैसेजिंग IM समूह] में शामिल हों।</string>
+    <string name="customer_service_buying_guidelines">Tencent Cloud तत्काल मैसेजिंग IM समूह</string>
+    <string name="customer_service_i_know">समझ गया</string>
+
+    <string name="refresh_questions">ताज़ा करें</string>
+    <string name="chat_bot">चैट सहायक</string>
+
+    <string name="chat_bot_unsupport_tips">चैट सहायक वर्तमान में बीटा चरण में एक प्रीमियम सुविधा है। सक्रियता और परीक्षण के लिए [Tencent Cloud तत्काल मैसेजिंग IM समूह] में शामिल हों।</string>
+    <string name="chat_bot_buying_guidelines">Tencent Cloud तत्काल मैसेजिंग IM समूह</string>
+
+    <string name="tasks_collection_submit">भरें</string>
+    <string name="tasks_collection_view">देखें</string>
+    <string name="must_label"> * </string>
+    <string name="collection_item_input_empty">यह फ़ील्ड आवश्यक है</string>
+    <string name="collection_submit_text">सबमिट करें</string>
+
+    <string-array name="common_phrases_list">
+        <item>क्या यह उपलब्ध है?</item>
+        <item>क्या आप छूट दे सकते हैं?</item>
+        <item>क्या कोई उपहार मिलेगा?</item>
+        <item>यह कब भेजा जाएगा?</item>
+        <item>आप कौन सी कूरियर सेवा का उपयोग करते हैं?</item>
+        <item>यह कब डिलीवर होगा?</item>
+    </string-array>
+</resources>
