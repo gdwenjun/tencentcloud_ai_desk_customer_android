@@ -19,6 +19,8 @@
     <string name="product_info_input_empty">Ce champ ne peut pas être vide</string>
     <string name="common_phrases">Expressions courantes</string>
     <string name="common_human_service">Service humain</string>
+    <string name="common_service_rating">Évaluation du service</string>
+    <string name="common_service_end">Terminer la conversation</string>
     <string name="customer_service_unsupport_tips">Le service client est une fonctionnalité premium actuellement en phase de test. Rejoignez le [Groupe IM Tencent Cloud] pour demander l\'activation et l\'essai.</string>
     <string name="customer_service_buying_guidelines">Groupe IM Tencent Cloud</string>
     <string name="customer_service_i_know">Compris</string>

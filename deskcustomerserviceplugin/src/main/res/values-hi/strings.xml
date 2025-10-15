@@ -19,6 +19,8 @@
     <string name="product_info_input_empty">यह फ़ील्ड खाली नहीं हो सकता</string>
     <string name="common_phrases">सामान्य वाक्यांश</string>
     <string name="common_human_service">मानव सहायता</string>
+    <string name="common_service_rating">सेवा मूल्यांकन</string>
+    <string name="common_service_end">बातचीत समाप्त करें</string>
     <string name="customer_service_unsupport_tips">ग्राहक सेवा वर्तमान में बीटा चरण में एक प्रीमियम सुविधा है। सक्रियता और परीक्षण के लिए [Tencent Cloud तत्काल मैसेजिंग IM समूह] में शामिल हों।</string>
     <string name="customer_service_buying_guidelines">Tencent Cloud तत्काल मैसेजिंग IM समूह</string>
     <string name="customer_service_i_know">समझ गया</string>
